@@ -16,7 +16,7 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
         ],
         output: {
             path: path.resolve(__dirname, 'dist'),
-            publicPath: '/',
+            publicPath: devServer ? '/' : '',
             filename: devServer ? '[name].js' : '[name].[contenthash].js',
         },
         optimization: {
@@ -106,6 +106,9 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
                         },
                     },
                 ],
+            }, {
+                test: /\.(jpg|png)$/,
+                loader: 'file-loader',
             }],
         },
     }),
