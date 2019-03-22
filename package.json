@@ -22,7 +22,7 @@
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "7.4.0",
     "bootstrap": "4.3.1",
-    "file-loader": "^3.0.1",
+    "file-loader": "3.0.1",
     "prop-types": "15.7.2",
     "ramda": "0.26.1",
     "react": "16.8.4",
@@ -31,7 +31,8 @@
     "reactstrap": "7.1.0",
     "redbox-react": "1.6.0",
     "redux": "4.0.1",
-    "redux-freeze": "^0.1.7",
+    "redux-form": "8.1.0",
+    "redux-freeze": "0.1.7",
     "redux-saga": "1.0.2",
     "smooth-scroll": "16.0.3"
   },

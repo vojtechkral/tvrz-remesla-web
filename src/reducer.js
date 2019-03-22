@@ -1,6 +1,6 @@
 import {combineReducers} from 'redux';
-import form from './form';
+import {reducer as formReducer} from 'redux-form';
 
 export default combineReducers({
-    [form.NAME]: form.reducer,
+    form: formReducer,
 });

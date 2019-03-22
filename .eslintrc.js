@@ -21,6 +21,7 @@ module.exports = {
             SwitchCase: 1, // case should be more indented than switch
         }],
         'react/jsx-indent': ['error', 4],
+        'react/jsx-indent-props': ['error', 4],
         'object-curly-spacing': ['error', 'never'],
         'object-curly-newline': ['error', {multiline: true, consistent: true}],
         'max-len': ['error', 140],
