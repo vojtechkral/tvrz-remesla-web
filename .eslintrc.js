@@ -28,6 +28,9 @@ module.exports = {
         curly: ['error', 'all'],
         'no-else-return': 'off',
 
+        // IMPORTS
+        'import/prefer-default-export': 'off',
+
         // REACT
         'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
         'react-hooks/rules-of-hooks': 'error',

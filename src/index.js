@@ -15,5 +15,5 @@ new SmoothScroll('a[href*="#"]', { // eslint-disable-line no-new, library API
 
 render(
     <App />,
-    document.getElementById('register'),
+    document.getElementById('register-form'),
 );
