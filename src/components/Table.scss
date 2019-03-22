@@ -1,0 +1,23 @@
+@import "./variables";
+
+$border-color: white;
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    border: 1px solid $border-color;
+    background: repeating-linear-gradient(90deg,
+        transparent,
+        transparent $cell-width - 1,
+        $border-color $cell-width - 1,
+        $border-color $cell-width
+    );
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid $border-color;
+}

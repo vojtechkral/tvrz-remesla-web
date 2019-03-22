@@ -5,6 +5,8 @@ import {Form as BootstrapForm, Button, Row, Col} from 'reactstrap';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
 
+import TestTable from './TestTable';
+
 const Form = ({invalid, pristine, handleSubmit}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
         <Row>
@@ -27,6 +29,7 @@ const Form = ({invalid, pristine, handleSubmit}) => (
                 />
             </Col>
         </Row>
+        <TestTable />
         <div className="d-flex justify-content-center">
             <Button color="primary" type="submit" disabled={invalid || pristine}>Přihlásit se</Button>
         </div>

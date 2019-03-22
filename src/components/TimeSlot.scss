@@ -1,0 +1,12 @@
+@import "./variables";
+
+.wrapper {
+    position: absolute;
+    height: $cell-height;
+    padding: 5px;
+}
+
+.main {
+    background: blue;
+    height: 100%;
+}

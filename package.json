@@ -24,6 +24,7 @@
     "bootstrap": "4.3.1",
     "email-validator": "2.0.4",
     "file-loader": "3.0.1",
+    "invariant": "2.2.4",
     "prop-types": "15.7.2",
     "ramda": "0.26.1",
     "react": "16.8.4",
