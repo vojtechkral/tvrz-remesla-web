@@ -2,13 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {FormFeedback, FormGroup, Label} from 'reactstrap';
 
-const FieldLayout = ({input, meta, label, inputComponent: Component, ...rest}) => (
-    <FormGroup>
-        <Label for={input.name}>{label}</Label>
-        <Component {...input} invalid={meta.invalid} {...rest} />
-        {meta.invalid && <FormFeedback invalid>{meta.error}</FormFeedback>}
-    </FormGroup>
-);
+const FieldLayout = ({input, meta, label, inputComponent: Component, ...rest}) => {
+    const showError = meta.invalid && meta.touched;
+    return (
+        <FormGroup>
+            <Label for={input.name}>{label}</Label>
+            <Component {...input} invalid={showError} {...rest} />
+            {showError && <FormFeedback>{meta.error}</FormFeedback>}
+        </FormGroup>
+    );
+};
 
 FieldLayout.propTypes = {
     input: PropTypes.shape({

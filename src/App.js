@@ -1,6 +1,6 @@
 import React from 'react';
 import AppProvider from './AppProvider';
-import {Form} from './containers';
+import Form from './Form';
 
 export default () => (
     <AppProvider>
