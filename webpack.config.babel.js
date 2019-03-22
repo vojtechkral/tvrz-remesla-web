@@ -66,13 +66,13 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
                 exclude: /node_modules/,
             }, {
                 test: /\.(css|scss)$/,
-                use: array(
+                exclude: /node_modules|src\/style/,
+                use: [
                     devServer ? 'style-loader' : MiniCssExtractPlugin.loader,
                     {
                         loader: 'css-loader',
                         options: {
                             importLoaders: 1,
-                            minimize: true,
                             sourceMap: true,
                             modules: true,
                             localIdentName: '[name]__[local]__[hash:base64:5]',
@@ -85,7 +85,27 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
                             implementation: sass,
                         },
                     },
-                ),
+                ],
+            }, {
+                test: /\.(css|scss)$/,
+                include: /node_modules|src\/style/,
+                use: [
+                    devServer ? 'style-loader' : MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 1,
+                            sourceMap: true,
+                        },
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: true,
+                            implementation: sass,
+                        },
+                    },
+                ],
             }],
         },
     }),
