@@ -3,8 +3,8 @@ import {connect} from 'react-redux';
 import {Alert} from 'reactstrap';
 import {getFormValues} from 'redux-form';
 import {createSelector} from 'reselect';
-import {REGISTRATION_FORM} from './constants';
-import prices, {BASE} from './prices';
+import {REGISTRATION_FORM} from '../constants';
+import prices, {BASE} from '../prices';
 
 const getSum = createSelector(
     getFormValues(REGISTRATION_FORM),
@@ -22,7 +22,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mergeProps = ({sum}) => ({
-    children: `Kolik zaplatíš za akci: ${sum} Kč`,
+    children: `Za účast zaplatíš: ${sum} Kč`,
     color: 'primary',
 });
 

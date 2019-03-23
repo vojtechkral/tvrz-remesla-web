@@ -2,7 +2,7 @@ import * as R from 'ramda';
 import {connect} from 'react-redux';
 import {Button} from 'reactstrap';
 import {isPristine, isInvalid, isSubmitting} from 'redux-form';
-import {REGISTRATION_FORM} from './constants';
+import {REGISTRATION_FORM} from '../constants';
 
 const mapStateToProps = (state) => ({
     disabled: R.or(
