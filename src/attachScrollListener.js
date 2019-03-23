@@ -1,3 +1,5 @@
+const OFFSET = 25;
+
 const getTop = (target) => {
     let element = target;
     let result = 0;
@@ -24,7 +26,7 @@ export default () => window.addEventListener('load', () => {
 
         Array.from(document.getElementsByClassName('nav-link')).forEach((navlink) => navlink.classList.remove('active'));
         Array.from(document.getElementsByTagName('section')).forEach((section) => {
-            const top = getTop(section);
+            const top = getTop(section) - OFFSET;
             const bottom = top + section.offsetHeight;
             if (window.scrollY > top && window.scrollY < bottom) {
                 const navlink = document.querySelector(`.nav-link[href="#${section.id}"]`);

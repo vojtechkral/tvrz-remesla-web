@@ -8,8 +8,8 @@ const getWidth = (start, end) => (end - start) * cellWidth;
 
 const HeaderCell = ({start, end}) => (
     <div className={styles.main} style={{width: getWidth(start, end)}}>
-        <div>{formatTime(start)}</div>
-        <div>{formatTime(end)}</div>
+        <div className={styles.upper}>{formatTime(start)}</div>
+        <div className={styles.lower}>{formatTime(end)}</div>
     </div>
 );
 

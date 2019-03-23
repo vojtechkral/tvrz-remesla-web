@@ -1,4 +1,5 @@
 @import "./variables";
+@import "../style/variables";
 
 .wrapper {
     position: absolute;
@@ -6,7 +7,50 @@
     padding: 5px;
 }
 
+
 .main {
-    background: blue;
     height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.75);
+
+    &:active, &:focus {
+        outline: 1px solid $primary;
+    }
 }
+
+@mixin colored($base) {
+    .main {
+        background-color: $base;
+        border-color: $base;
+
+        &:not(:disabled):hover{
+            background-color: saturate($base, 50%);
+            border-color: saturate($base, 50%);
+        }
+
+        &:disabled {
+            background-color: desaturate($base, 50%);
+            border-color: desaturate($base, 50%);
+        }
+    }
+
+
+
+    .active {
+        border-color: $gray-700;
+        background-color: saturate($base, 20%);
+        &:hover {
+            background: saturate($base, 50%);
+            border-color: $gray-700 !important;
+        }
+    }
+}
+
+@include colored(goldenrod);
