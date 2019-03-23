@@ -4,8 +4,7 @@ import {reduxForm} from 'redux-form';
 import {Form as BootstrapForm, Button, Row, Col} from 'reactstrap';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
-
-import TestTable from './TestTable';
+import Schedule from './Schedule';
 
 const Form = ({invalid, pristine, handleSubmit}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
@@ -29,7 +28,7 @@ const Form = ({invalid, pristine, handleSubmit}) => (
                 />
             </Col>
         </Row>
-        <TestTable />
+        <Schedule />
         <div className="d-flex justify-content-center">
             <Button color="primary" type="submit" disabled={invalid || pristine}>Přihlásit se</Button>
         </div>
