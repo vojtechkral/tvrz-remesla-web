@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {reduxForm} from 'redux-form';
-import {Form as BootstrapForm, Row, Col} from 'reactstrap';
+import {Form as BootstrapForm, Row, Col, Alert} from 'reactstrap';
 import {TextInput} from 'components';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
@@ -10,8 +10,9 @@ import {submit} from '../actions';
 import Schedule from './Schedule';
 import SubmitContainer from './SubmitContainer';
 import Sum from './Sum';
+import validate from './validate';
 
-const Form = ({handleSubmit}) => (
+const Form = ({handleSubmit, error}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
         <Row>
             <Col md={6}>
@@ -34,6 +35,7 @@ const Form = ({handleSubmit}) => (
             </Col>
         </Row>
         <Schedule />
+        {error && <Alert color="danger">{error}</Alert>}
         <div className="d-flex justify-content-center">
             <Sum />
         </div>
@@ -50,9 +52,14 @@ const Form = ({handleSubmit}) => (
 
 Form.propTypes = {
     handleSubmit: PropTypes.func.isRequired,
+    error: PropTypes.string,
+};
+
+Form.defaultProps = {
+    error: null,
 };
 
 export default reduxForm({
     form: REGISTRATION_FORM,
-    onSubmit: (values, dispatch) => dispatch(submit(values)),
+    onSubmit: (values, dispatch) => dispatch(submit(validate(values))),
 })(Form);

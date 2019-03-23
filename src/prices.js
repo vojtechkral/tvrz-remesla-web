@@ -6,6 +6,8 @@ const NUZ = 850;
 
 export const BASE = 250;
 
+/* FIELDS */
+
 export default {
     med1: MED,
     med2: MED,

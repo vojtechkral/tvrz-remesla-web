@@ -4,6 +4,7 @@ import * as R from 'ramda';
 const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
 const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSc3xNA_368dW2CvwbQ997jJYsCFV0KPVA81wlYO0H010Vv5ig/formResponse';
 
+/* FIELDS */
 const transformValues = (values) => ({
     'entry.2146001187': values.name,
     'entry.1672151647': values.email,
