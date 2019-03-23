@@ -1,43 +1,135 @@
 import React from 'react';
-import {TableRow, Table, TimeSlot, ScheduleContainer} from 'components';
+import {Field} from 'redux-form';
+import {TableRow, Table, ScheduleContainer} from 'components';
+import {TimeSlotInput} from 'containers';
 
 export default () => (
     <ScheduleContainer>
         <Table start={9} end={20} title="Sobota">
             <TableRow color="copper">
-                <TimeSlot start={9} end={14}>Měď 1</TimeSlot>
-                <TimeSlot start={15} end={20}>Měď 2</TimeSlot>
+                <Field
+                    name="med1"
+                    start={9}
+                    end={14}
+                    component={TimeSlotInput}
+                    label="Měděné výrobky"
+                />
+                <Field
+                    name="med2"
+                    start={15}
+                    end={20}
+                    component={TimeSlotInput}
+                    label="Měděné výrobky"
+                />
             </TableRow>
             <TableRow color="green">
-                <TimeSlot start={9} end={12}>Korálky 1</TimeSlot>
-                <TimeSlot start={13} end={16}>Korálky 2</TimeSlot>
-                <TimeSlot start={17} end={20}>Korálky 3</TimeSlot>
+                <Field
+                    name="korale1"
+                    start={9}
+                    end={12}
+                    component={TimeSlotInput}
+                    label="Korálky"
+                />
+                <Field
+                    name="korale2"
+                    start={13}
+                    end={16}
+                    component={TimeSlotInput}
+                    label="Korálky"
+                />
+                <Field
+                    name="korale3"
+                    start={17}
+                    end={20}
+                    component={TimeSlotInput}
+                    label="Korálky"
+                />
             </TableRow>
-            <TableRow color="purple">
-                <TimeSlot start={9} end={14}>Tkaní 1</TimeSlot>
-                <TimeSlot start={15} end={20}>Tkaní 2</TimeSlot>
+            <TableRow color="red">
+                <Field
+                    name="tkani1"
+                    start={9}
+                    end={14}
+                    component={TimeSlotInput}
+                    label="Tkaní"
+                />
+                <Field
+                    name="tkani2"
+                    start={15}
+                    end={20}
+                    component={TimeSlotInput}
+                    label="Tkaní"
+                />
             </TableRow>
             <TableRow>
-                <TimeSlot start={9} end={14}>Lucerna 1</TimeSlot>
-                <TimeSlot start={15} end={20}>Lucerna 2</TimeSlot>
+                <Field
+                    name="lucerna1"
+                    start={9}
+                    end={14}
+                    component={TimeSlotInput}
+                    label="Lucerna"
+                />
+                <Field
+                    name="lucerna2"
+                    start={15}
+                    end={20}
+                    component={TimeSlotInput}
+                    label="Lucerna"
+                />
             </TableRow>
             <TableRow color="steel">
-                <TimeSlot start={9} end={17}>Nůž a pochva</TimeSlot>
+                <Field
+                    name="nuz"
+                    start={9}
+                    end={17}
+                    component={TimeSlotInput}
+                    label="Nůže a pochva"
+                />
             </TableRow>
         </Table>
         <Table start={9} end={15} title="Neděle">
             <TableRow color="copper">
-                <TimeSlot start={9} end={14}>Měď 3</TimeSlot>
+                <Field
+                    name="med3"
+                    start={9}
+                    end={14}
+                    component={TimeSlotInput}
+                    label="Měděné výrobky"
+                />
             </TableRow>
             <TableRow color="green">
-                <TimeSlot start={9} end={12}>Korálky 4</TimeSlot>
-                <TimeSlot start={12} end={15}>Korálky 5</TimeSlot>
+                <Field
+                    name="korale4"
+                    start={9}
+                    end={12}
+                    component={TimeSlotInput}
+                    label="Korálky"
+                />
+                <Field
+                    name="korale5"
+                    start={12}
+                    end={15}
+                    component={TimeSlotInput}
+                    label="Korálky"
+                />
             </TableRow>
-            <TableRow color="purple">
-                <TimeSlot start={9} end={14}>Tkaní 3</TimeSlot>
+            <TableRow color="red">
+                <Field
+                    name="tkani3"
+                    start={9}
+                    end={14}
+                    component={TimeSlotInput}
+                    label="Tkaní"
+                />
             </TableRow>
             <TableRow>
-                <TimeSlot start={9} end={14}>Lucerna 3</TimeSlot>
+                <Field
+                    name="lucerna3"
+                    start={9}
+                    end={14}
+                    component={TimeSlotInput}
+                    label="Lucerna"
+                />
             </TableRow>
             <TableRow color="steel" />
         </Table>

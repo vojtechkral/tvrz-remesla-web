@@ -13,7 +13,7 @@ const TableRow = ({children, color}) => (
 
 TableRow.propTypes = {
     children: PropTypes.node,
-    color: PropTypes.oneOf(['goldenrod', 'copper', 'green', 'steel', 'purple', 'red']),
+    color: PropTypes.oneOf(['goldenrod', 'copper', 'green', 'steel', 'red']),
 };
 
 TableRow.defaultProps = {

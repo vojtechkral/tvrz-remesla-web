@@ -12,7 +12,6 @@ const colorTable = {
     copper: styles.copper,
     green: styles.green,
     steel: styles.steel,
-    purple: styles.purple,
     red: styles.red,
 };
 

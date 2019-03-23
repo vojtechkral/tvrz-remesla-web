@@ -35,8 +35,8 @@
         border-color: $base;
 
         &:not(:disabled):hover{
-            background-color: saturate($base, 50%);
-            border-color: saturate($base, 50%);
+            background-color: saturate($base, 80%);
+            border-color: saturate($base, 80%);
         }
 
         &:disabled {
@@ -46,25 +46,21 @@
     }
 
     .active {
-        border-color: $gray-700;
-        background-color: saturate($base, 30%);
+        border-color: black;
+        background-color: saturate($base, 50%);
         &:hover {
-            background: saturate($base, 50%);
-            border-color: $gray-700 !important;
+            background: saturate($base, 80%);
+            border-color: black !important;
         }
     }
 }
 
 .goldenrod {
-    @include colored(#daa520);
+    @include colored(desaturate(#daa520, 10%));
 }
 
 .red {
     @include colored(#CD5C5C);
-}
-
-.purple {
-    @include colored(#9370DB);
 }
 
 .green {
