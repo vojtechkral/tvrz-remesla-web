@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {reduxForm} from 'redux-form';
-import {Form as BootstrapForm, Button, Row, Col} from 'reactstrap';
+import {Form as BootstrapForm, Row, Col} from 'reactstrap';
 import {TextInput} from 'components';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
+import {REGISTRATION_FORM} from './constants';
 import {submit} from './actions';
 import Schedule from './Schedule';
+import SubmitContainer from './SubmitContainer';
 
-const Form = ({invalid, pristine, handleSubmit}) => (
+const Form = ({handleSubmit}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
         <Row>
             <Col md={6}>
@@ -37,18 +39,16 @@ const Form = ({invalid, pristine, handleSubmit}) => (
             placeholder="Chceš nám něco vzkázat?"
         />
         <div className="d-flex justify-content-center">
-            <Button color="primary" type="submit" disabled={invalid || pristine}>Přihlásit se</Button>
+            <SubmitContainer />
         </div>
     </BootstrapForm>
 );
 
 Form.propTypes = {
-    invalid: PropTypes.bool.isRequired,
-    pristine: PropTypes.bool.isRequired,
     handleSubmit: PropTypes.func.isRequired,
 };
 
 export default reduxForm({
-    form: 'registration',
+    form: REGISTRATION_FORM,
     onSubmit: (values, dispatch) => dispatch(submit(values)),
 })(Form);
