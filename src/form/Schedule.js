@@ -147,4 +147,4 @@ const mapStateToProps = (state) => ({
     disabled: isSubmitted(state),
 });
 
-export default connect(mapStateToProps)(Schedule)
+export default connect(mapStateToProps)(Schedule);

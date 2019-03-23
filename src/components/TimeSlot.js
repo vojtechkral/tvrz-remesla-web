@@ -1,8 +1,9 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import {Manager, Popper, Reference} from 'react-popper';
+import {Manager, Reference} from 'react-popper';
 
+import useTooltip from './useTooltip';
 import {cellWidth} from './variables.scss';
 import IntervalContext from './IntervalContext';
 import RowColorContext from './RowColorContext';
@@ -20,7 +21,7 @@ const colorTable = {
 const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip}) => {
     const interval = useContext(IntervalContext);
     const color = useContext(RowColorContext);
-    const [showTooltip, setTooltipVisible] = useState(false);
+    const [showTooltip, onMouseEnter, onMouseLeave] = useTooltip(250);
 
     const left = (start - interval.start) * cellWidth;
     const width = (end - start) * cellWidth;
@@ -37,8 +38,8 @@ const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip}) =>
                                 [styles.active]: active && !disabled,
                             })}
                             onClick={onClick}
-                            onMouseEnter={() => setTooltipVisible(true)}
-                            onMouseLeave={() => setTooltipVisible(false)}
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
                             disabled={disabled}
                         >
                             {children}
