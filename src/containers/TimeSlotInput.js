@@ -13,6 +13,18 @@ const mapStateToProps = (state, {input}) => ({
     submitted: isSubmitted(state),
 });
 
+const formatFreeSlots = (slots) => {
+    if (slots === 0) {
+        return 'Všechna místa zamluvená';
+    } else if (slots === 1) {
+        return '1 volné místo';
+    } else if (slots < 5) {
+        return `${slots} volná místa`;
+    } else {
+        return `${slots} volných míst`;
+    }
+};
+
 const mergeProps = ({freeSlots, submitted}, dispatchProps, {input, start, end, label}) => {
     const active = input.value !== EMPTY;
     const disabled = freeSlots === 0;
@@ -23,6 +35,7 @@ const mergeProps = ({freeSlots, submitted}, dispatchProps, {input, start, end, l
         start,
         end,
         children: `${label}: ${prices[input.name]} Kč`,
+        tooltip: active ? 'Rezervováno' : formatFreeSlots(freeSlots),
     });
 };
 
