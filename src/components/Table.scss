@@ -6,6 +6,8 @@ $background-color: $white;
 
 .positioner {
     max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .wrapper {
@@ -31,6 +33,10 @@ $background-color: $white;
         $border-color $cell-width - 1,
         $border-color $cell-width
     );
+}
+
+.disabled {
+    background-color: $gray-300;
 }
 
 .header {

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {reduxForm} from 'redux-form';
 import {Form as BootstrapForm, Button, Row, Col} from 'reactstrap';
+import {TextInput} from 'components';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
 import {submit} from './actions';
@@ -30,6 +31,11 @@ const Form = ({invalid, pristine, handleSubmit}) => (
             </Col>
         </Row>
         <Schedule />
+        <Field
+            component={TextInput}
+            name="message"
+            placeholder="Chceš nám něco vzkázat?"
+        />
         <div className="d-flex justify-content-center">
             <Button color="primary" type="submit" disabled={invalid || pristine}>Přihlásit se</Button>
         </div>

@@ -6,7 +6,7 @@ const FieldLayout = ({input, meta, label, inputComponent: Component, ...rest}) =
     const showError = meta.invalid && meta.touched;
     return (
         <FormGroup>
-            <Label for={input.name}>{label}</Label>
+            {label && <Label for={input.name}>{label}</Label>}
             <Component {...input} invalid={showError} {...rest} />
             {showError && <FormFeedback>{meta.error}</FormFeedback>}
         </FormGroup>
@@ -22,7 +22,11 @@ FieldLayout.propTypes = {
         error: PropTypes.string,
     }).isRequired,
     inputComponent: PropTypes.func.isRequired,
-    label: PropTypes.string.isRequired,
+    label: PropTypes.string,
+};
+
+FieldLayout.defaultProps = {
+    label: null,
 };
 
 export default FieldLayout;

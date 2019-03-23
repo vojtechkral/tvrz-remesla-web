@@ -7,6 +7,7 @@ const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSc3xNA_368dW2CvwbQ997
 const transformValues = (values) => ({
     'entry.2146001187': values.name,
     'entry.1672151647': values.email,
+    'entry.1667341310': values.message,
     'entry.2001535182': values.med1,
     'entry.863979832': values.med2,
     'entry.599933823': values.med3,

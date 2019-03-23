@@ -1,9 +1,10 @@
 import {takeEvery, call, put, delay} from 'redux-saga/effects';
-import {SUBMIT, updateFreeSlots} from './actions';
+import {SUBMIT, updateFreeSlots, submitComplete} from './actions';
 import {submit, getFreeSlots} from './api';
 
 export const submitForm = function* submitForm({values}) {
     yield call(submit, values);
+    yield put(submitComplete());
 };
 
 export const loadFreeSlots = function* loadFreeSlots() {

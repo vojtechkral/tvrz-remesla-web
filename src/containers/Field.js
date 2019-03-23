@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Field as ReduxField} from 'redux-form';
+import {connect} from 'react-redux';
 import FieldLayout from './FieldLayout';
+import {isSubmitted} from '../selectors';
 
 const Field = ({component, ...rest}) => (
     <ReduxField
@@ -15,4 +17,8 @@ Field.propTypes = {
     component: PropTypes.func.isRequired,
 };
 
-export default Field;
+const mapStateToProps = (state) => ({
+    disabled: isSubmitted(state),
+});
+
+export default connect(mapStateToProps)(Field);

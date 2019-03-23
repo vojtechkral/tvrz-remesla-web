@@ -1,11 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import {connect} from 'react-redux';
 import {Field} from 'redux-form';
 import {TableRow, Table, ScheduleContainer} from 'components';
 import {TimeSlotInput} from 'containers';
+import {isSubmitted} from 'selectors';
 
-export default () => (
+const Schedule = ({disabled}) => (
     <ScheduleContainer>
-        <Table start={9} end={20} title="Sobota">
+        <Table start={9} end={20} title="Sobota" disabled={disabled}>
             <TableRow color="copper">
                 <Field
                     name="med1"
@@ -87,7 +90,7 @@ export default () => (
                 />
             </TableRow>
         </Table>
-        <Table start={9} end={15} title="Neděle">
+        <Table start={9} end={15} title="Neděle" disabled={disabled}>
             <TableRow color="copper">
                 <Field
                     name="med3"
@@ -135,3 +138,13 @@ export default () => (
         </Table>
     </ScheduleContainer>
 );
+
+Schedule.propTypes = {
+    disabled: PropTypes.bool.isRequired,
+};
+
+const mapStateToProps = (state) => ({
+    disabled: isSubmitted(state),
+});
+
+export default connect(mapStateToProps)(Schedule)
