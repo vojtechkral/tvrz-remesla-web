@@ -1,7 +1,6 @@
 import reduxFreeze from 'redux-freeze';
 import {applyMiddleware, compose, createStore} from 'redux';
 import * as R from 'ramda';
-import saga from './saga';
 
 export default (reducer, sagaMiddleware) => {
     const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__; // eslint-disable-line no-underscore-dangle
@@ -16,9 +15,5 @@ export default (reducer, sagaMiddleware) => {
         reduxDevTools ? reduxDevTools() : R.identity,
     );
 
-    const store = createStore(reducer, middleware);
-
-    sagaMiddleware.run(saga);
-
-    return store;
+    return createStore(reducer, middleware);
 };

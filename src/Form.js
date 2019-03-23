@@ -4,6 +4,7 @@ import {reduxForm} from 'redux-form';
 import {Form as BootstrapForm, Button, Row, Col} from 'reactstrap';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
+import {submit} from './actions';
 import Schedule from './Schedule';
 
 const Form = ({invalid, pristine, handleSubmit}) => (
@@ -41,4 +42,7 @@ Form.propTypes = {
     handleSubmit: PropTypes.func.isRequired,
 };
 
-export default reduxForm({form: 'registration'})(Form);
+export default reduxForm({
+    form: 'registration',
+    onSubmit: (values, dispatch) => dispatch(submit(values)),
+})(Form);

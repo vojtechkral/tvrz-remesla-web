@@ -8,12 +8,12 @@ export default () => (
                 <TimeSlot start={9} end={14}>Měď 1</TimeSlot>
                 <TimeSlot start={15} end={20}>Měď 2</TimeSlot>
             </TableRow>
-            <TableRow color="purple">
+            <TableRow color="green">
                 <TimeSlot start={9} end={12}>Korálky 1</TimeSlot>
                 <TimeSlot start={13} end={16}>Korálky 2</TimeSlot>
                 <TimeSlot start={17} end={20}>Korálky 3</TimeSlot>
             </TableRow>
-            <TableRow color="green">
+            <TableRow color="purple">
                 <TimeSlot start={9} end={14}>Tkaní 1</TimeSlot>
                 <TimeSlot start={15} end={20}>Tkaní 2</TimeSlot>
             </TableRow>
@@ -29,11 +29,11 @@ export default () => (
             <TableRow color="copper">
                 <TimeSlot start={9} end={14}>Měď 3</TimeSlot>
             </TableRow>
-            <TableRow color="purple">
+            <TableRow color="green">
                 <TimeSlot start={9} end={12}>Korálky 4</TimeSlot>
                 <TimeSlot start={12} end={15}>Korálky 5</TimeSlot>
             </TableRow>
-            <TableRow color="green">
+            <TableRow color="purple">
                 <TimeSlot start={9} end={14}>Tkaní 3</TimeSlot>
             </TableRow>
             <TableRow>
