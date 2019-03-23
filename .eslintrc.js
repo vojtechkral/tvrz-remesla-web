@@ -34,6 +34,7 @@ module.exports = {
 
         // REACT
         'react/jsx-filename-extension': ['error', {extensions: ['.js']}],
+        'react/jsx-one-expression-per-line': 'off',
         'react-hooks/rules-of-hooks': 'error',
 
         // JSX-A11Y

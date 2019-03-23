@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import createSagaMiddleware from 'redux-saga';
 import {Provider} from 'react-redux';
 import RedBox from 'redbox-react';
+import {Alert} from 'reactstrap';
 
 import createStore from './createStore';
 import reducer from './reducer';
@@ -54,7 +55,12 @@ export default class AppProvider extends Component {
             if (process.env.NODE_ENV === 'development') {
                 return <RedBox error={error} />;
             }
-            return 'Stalo se něco špatného.'; // TODO lepší chyba
+            return (
+                <Alert color="danger">
+                    Něco se pokazilo. Zkus <a onClick={() => window.location.reload()} href="#register">obnovit</a> stránku.
+                    Pokud to nepomůže, napiš nám na <a href="mailto:tvrz@instruktori.cz">tvrz@instruktori.cz</a>.
+                </Alert>
+            );
         } else {
             return (
                 <Provider store={this.store}>{children}</Provider>
