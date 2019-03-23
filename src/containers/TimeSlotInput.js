@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {TimeSlot} from 'components';
 import {getFreeSlots, isSubmitted} from 'selectors';
+import prices from 'prices';
 
 const VALUE = 'ANO';
 const EMPTY = '';
@@ -21,7 +22,7 @@ const mergeProps = ({freeSlots, submitted}, dispatchProps, {input, start, end, l
         disabled,
         start,
         end,
-        children: label,
+        children: `${label}: ${prices[input.name]} Kč`,
     });
 };
 

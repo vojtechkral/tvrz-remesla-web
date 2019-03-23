@@ -9,6 +9,7 @@ import {REGISTRATION_FORM} from './constants';
 import {submit} from './actions';
 import Schedule from './Schedule';
 import SubmitContainer from './SubmitContainer';
+import Sum from './Sum';
 
 const Form = ({handleSubmit}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
@@ -33,6 +34,9 @@ const Form = ({handleSubmit}) => (
             </Col>
         </Row>
         <Schedule />
+        <div className="d-flex justify-content-center">
+            <Sum />
+        </div>
         <Field
             component={TextInput}
             name="message"
