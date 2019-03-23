@@ -23,6 +23,10 @@
     &:active, &:focus {
         outline: 1px solid $primary;
     }
+
+    &:disabled {
+        color: $gray-700;
+    }
 }
 
 @mixin colored($base) {
@@ -41,11 +45,9 @@
         }
     }
 
-
-
     .active {
         border-color: $gray-700;
-        background-color: saturate($base, 20%);
+        background-color: saturate($base, 30%);
         &:hover {
             background: saturate($base, 50%);
             border-color: $gray-700 !important;
@@ -53,4 +55,26 @@
     }
 }
 
-@include colored(goldenrod);
+.goldenrod {
+    @include colored(#daa520);
+}
+
+.red {
+    @include colored(#CD5C5C);
+}
+
+.purple {
+    @include colored(#9370DB);
+}
+
+.green {
+    @include colored(#9acd32);
+}
+
+.copper {
+    @include colored(#b87333);
+}
+
+.steel {
+    @include colored(lighten(#4682b4, 10%));
+}
