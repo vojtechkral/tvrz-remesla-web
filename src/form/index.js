@@ -1,12 +1,15 @@
+import * as R from 'ramda';
 import React from 'react';
 import PropTypes from 'prop-types';
 import {reduxForm} from 'redux-form';
+import {connect} from 'react-redux';
 import {Form as BootstrapForm, Row, Col, Alert} from 'reactstrap';
 import {TextInput} from 'components';
 import {Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
+import submit from 'submit';
+import {getIntervals} from 'selectors';
 import {REGISTRATION_FORM} from '../constants';
-import {submit} from '../actions';
 import Schedule from './Schedule';
 import SubmitContainer from './SubmitContainer';
 import Sum from './Sum';
@@ -61,7 +64,14 @@ Form.defaultProps = {
     error: null,
 };
 
-export default reduxForm({
-    form: REGISTRATION_FORM,
-    onSubmit: (values, dispatch) => dispatch(submit(values)),
-})(Form);
+const mapStateToProps = (state) => ({
+    intervals: getIntervals(state),
+});
+
+export default R.compose(
+    connect(mapStateToProps),
+    reduxForm({
+        form: REGISTRATION_FORM,
+        onSubmit: submit,
+    }),
+)(Form);
