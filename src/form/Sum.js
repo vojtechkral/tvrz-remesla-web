@@ -3,18 +3,20 @@ import {connect} from 'react-redux';
 import {Alert} from 'reactstrap';
 import {getFormValues} from 'redux-form';
 import {createSelector} from 'reselect';
+import {getPrices} from 'selectors';
+import {BASE} from 'prices';
 import {REGISTRATION_FORM} from '../constants';
-import prices, {BASE} from '../prices';
 
 const getSum = createSelector(
     getFormValues(REGISTRATION_FORM),
-    R.pipe(
+    getPrices,
+    (values, prices) => R.pipe(
         R.defaultTo({}),
         R.keys,
         R.map(R.flip(R.prop)(prices)),
         R.filter(R.compose(R.not, R.isNil)),
         R.sum,
-    ),
+    )(values),
 );
 
 const mapStateToProps = (state) => ({

@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {TimeSlot} from 'components';
 import {getFreeSlots, isSubmitted} from 'selectors';
-import prices from 'prices';
+import {registerSlotField} from 'actions';
+import {withDayContext} from './DayContext';
 
 const VALUE = 'ANO';
 const EMPTY = '';
@@ -11,6 +12,12 @@ const EMPTY = '';
 const mapStateToProps = (state, {input}) => ({
     freeSlots: getFreeSlots(state, input.name),
     submitted: isSubmitted(state),
+});
+
+const mapDispatchToProps = (dispatch, {input, day, start, end, id, price}) => ({
+    onMount: () => {
+        dispatch(registerSlotField({name: input.name, day, price, start, end, id}));
+    },
 });
 
 const formatFreeSlots = (slots) => {
@@ -25,7 +32,7 @@ const formatFreeSlots = (slots) => {
     }
 };
 
-const mergeProps = ({freeSlots, submitted}, dispatchProps, {input, start, end, label}) => {
+const mergeProps = ({freeSlots, submitted}, {onMount}, {input, start, end, label, price}) => {
     const active = input.value !== EMPTY;
     const disabled = freeSlots === 0;
     return ({
@@ -34,12 +41,16 @@ const mergeProps = ({freeSlots, submitted}, dispatchProps, {input, start, end, l
         disabled,
         start,
         end,
-        children: `${label}: ${prices[input.name]} Kč`,
+        onMount,
+        children: `${label}: ${price} Kč`,
         tooltip: active ? 'Rezervováno' : formatFreeSlots(freeSlots),
     });
 };
 
-const TimeSlotInput = connect(mapStateToProps, undefined, mergeProps)(TimeSlot);
+const TimeSlotInput = R.compose(
+    withDayContext,
+    connect(mapStateToProps, mapDispatchToProps, mergeProps),
+)(TimeSlot);
 
 TimeSlotInput.propTypes = {
     input: PropTypes.shape({
@@ -47,6 +58,11 @@ TimeSlotInput.propTypes = {
         value: PropTypes.string.isRequired,
         onChange: PropTypes.func.isRequired,
     }).isRequired,
+    start: PropTypes.number.isRequired,
+    end: PropTypes.number.isRequired,
+    label: PropTypes.string.isRequired,
+    id: PropTypes.string.isRequired,
+    price: PropTypes.number.isRequired,
 };
 
 export default TimeSlotInput;

@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {Manager, Reference} from 'react-popper';
@@ -18,10 +18,11 @@ const colorTable = {
     red: styles.red,
 };
 
-const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip}) => {
+const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onMount}) => {
     const interval = useContext(IntervalContext);
     const color = useContext(RowColorContext);
     const [showTooltip, onMouseEnter, onMouseLeave] = useTooltip(250);
+    useEffect(onMount, []);
 
     const left = (start - interval.start) * cellWidth;
     const width = (end - start) * cellWidth;
@@ -60,6 +61,7 @@ TimeSlot.propTypes = {
     active: PropTypes.bool,
     onClick: PropTypes.func.isRequired,
     tooltip: PropTypes.string,
+    onMount: PropTypes.func.isRequired,
 };
 
 TimeSlot.defaultProps = {
