@@ -10,7 +10,6 @@ import {submit} from '../actions';
 import Schedule from './Schedule';
 import SubmitContainer from './SubmitContainer';
 import Sum from './Sum';
-import validate from './validate';
 
 const Form = ({handleSubmit, error}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
@@ -64,5 +63,5 @@ Form.defaultProps = {
 
 export default reduxForm({
     form: REGISTRATION_FORM,
-    onSubmit: (values, dispatch) => dispatch(submit(validate(values))),
+    onSubmit: (values, dispatch) => dispatch(submit(values)),
 })(Form);

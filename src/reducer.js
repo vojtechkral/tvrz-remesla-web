@@ -19,10 +19,15 @@ const ids = (state = {}, action) => {
     }
 };
 
+const intervals = (state = [], action) => (action.type === REGISTER_SLOT_FIELD
+    ? R.append(R.pick(['name', 'start', 'end', 'day'], action))(state)
+    : state);
+
 export default combineReducers({
     form: formReducer,
     freeSlots,
     submitted,
     price,
     ids,
+    intervals,
 });
