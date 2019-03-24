@@ -1,4 +1,4 @@
-const OFFSET = 25;
+const OFFSET = 150;
 
 const getTop = (target) => {
     let element = target;
