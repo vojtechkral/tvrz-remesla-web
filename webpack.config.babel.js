@@ -63,7 +63,7 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
                 options: {
                     cacheDirectory: true,
                 },
-                exclude: /node_modules/,
+                include: /src|superagent/,
             }, {
                 test: /\.(css|scss)$/,
                 exclude: /node_modules|src\/style/,
