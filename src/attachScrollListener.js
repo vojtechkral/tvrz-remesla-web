@@ -13,12 +13,14 @@ const getTop = (target) => {
 export default () => window.addEventListener('load', () => {
     const navbar = document.getElementById('mainNav');
     const title = document.getElementById('title');
+    const getMaxScroll = () => Math.max(getTop(title) - navbar.offsetHeight * 1.5, 0);
 
-    navbar.classList.remove('navbar-shrink');
+    if (window.scrollY <= getMaxScroll()) {
+        navbar.classList.remove('navbar-shrink');
+    }
 
     document.addEventListener('scroll', () => {
-        const maxScroll = (getTop(title) - navbar.offsetHeight * 1.5);
-        if (window.scrollY > Math.max(maxScroll, 0)) {
+        if (window.scrollY > getMaxScroll()) {
             navbar.classList.add('navbar-shrink');
         } else {
             navbar.classList.remove('navbar-shrink');
