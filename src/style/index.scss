@@ -7,6 +7,8 @@
 body {
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.0625em;
+    background-color: $gray-900;
+    color: $gray-400;
 }
 
 a {
@@ -33,4 +35,8 @@ a {
 
 footer {
     padding: 5rem 0;
+}
+
+section {
+    padding: 2rem 0;
 }
