@@ -13,6 +13,7 @@ attachScrollListener();
 new SmoothScroll('a[href*="#"]', { // eslint-disable-line no-new, library API
     speed: 1000,
     easing: 'easeInOutCubic',
+    offset: () => document.getElementById('mainNav').offsetHeight,
 });
 
 render(
