@@ -29,7 +29,12 @@ const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onM
 
     return (
         <Manager>
-            <div style={{left, width}} className={classnames(styles.wrapper, colorTable[color])}>
+            <div
+                style={{left, width}}
+                className={classnames(styles.wrapper, colorTable[color])}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+            >
                 <Reference>
                     {({ref}) => (
                         <button
@@ -39,8 +44,6 @@ const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onM
                                 [styles.active]: active && !disabled,
                             })}
                             onClick={onClick}
-                            onMouseEnter={onMouseEnter}
-                            onMouseLeave={onMouseLeave}
                             disabled={disabled}
                         >
                             {children}

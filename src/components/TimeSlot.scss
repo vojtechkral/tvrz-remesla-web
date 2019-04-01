@@ -26,6 +26,7 @@
 
     &:disabled {
         color: $gray-700;
+        pointer-events: none;
     }
 }
 
