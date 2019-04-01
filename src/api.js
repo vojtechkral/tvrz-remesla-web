@@ -11,7 +11,7 @@ export const submit = (values) => superagent
 
 const API_KEY = 'AIzaSyCqgsnrf_ptIMULLJ0bN5IWlWFZQ0VkK84';
 const SPREADSHEET_ID = '1LxU5o940KeYSs5XnjtIVCIVTe7neUlqQo7akL3mBu7o';
-const RANGE = 'public!A1:O2';
+const RANGE = 'public!A1:Q2';
 
 const GDOC_ULR = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`;
 

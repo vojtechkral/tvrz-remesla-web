@@ -16,6 +16,7 @@ const colorTable = {
     green: styles.green,
     steel: styles.steel,
     red: styles.red,
+    purple: styles.purple,
 };
 
 const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onMount}) => {

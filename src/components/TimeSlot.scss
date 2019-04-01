@@ -75,3 +75,7 @@
 .steel {
     @include colored(lighten(#4682b4, 10%));
 }
+
+.purple {
+    @include colored(desaturate(#be29ec, 30%));
+}

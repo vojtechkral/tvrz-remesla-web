@@ -5,7 +5,7 @@ import {Field} from 'redux-form';
 import {TableRow, Table, ScheduleContainer} from 'components';
 import {TimeSlotInput, DayProvider} from 'containers';
 import {isSubmitted} from 'selectors';
-import {LUCERNA, TKANI, KORALE, NUZ, MED} from 'prices';
+import {LUCERNA, TKANI, KORALE, NUZ, MED, KARETKY} from 'prices';
 
 const Schedule = ({disabled}) => (
     <ScheduleContainer>
@@ -78,6 +78,26 @@ const Schedule = ({disabled}) => (
                         label="Tkaní"
                         price={TKANI}
                         id="entry.132012809"
+                    />
+                </TableRow>
+                <TableRow color="purple">
+                    <Field
+                        name="karetky1"
+                        start={10}
+                        end={14}
+                        component={TimeSlotInput}
+                        label="Karetkování"
+                        price={KARETKY}
+                        id="entry.1370085336"
+                    />
+                    <Field
+                        name="karetky2"
+                        start={15}
+                        end={19}
+                        component={TimeSlotInput}
+                        label="Karetkování"
+                        price={KARETKY}
+                        id="entry.413199985"
                     />
                 </TableRow>
                 <TableRow>
@@ -157,6 +177,7 @@ const Schedule = ({disabled}) => (
                         id="entry.905015196"
                     />
                 </TableRow>
+                <TableRow color="purple" />
                 <TableRow>
                     <Field
                         name="lucerna3"
