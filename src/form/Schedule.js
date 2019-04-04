@@ -9,13 +9,13 @@ import {LUCERNA, TKANI, KORALE, NUZ, MED, KARETKY} from 'prices';
 
 const Schedule = ({disabled}) => (
     <ScheduleContainer>
-        <Table start={9} end={20} title="Sobota" disabled={disabled}>
+        <Table start={9} end={19} title="Sobota" disabled={disabled}>
             <DayProvider value="sobota">
                 <TableRow color="copper">
                     <Field
                         name="med1"
                         start={9}
-                        end={14}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Měděné výrobky"
                         price={MED}
@@ -23,8 +23,8 @@ const Schedule = ({disabled}) => (
                     />
                     <Field
                         name="med2"
-                        start={15}
-                        end={20}
+                        start={14}
+                        end={18.5}
                         component={TimeSlotInput}
                         label="Měděné výrobky"
                         price={MED}
@@ -43,8 +43,8 @@ const Schedule = ({disabled}) => (
                     />
                     <Field
                         name="korale2"
-                        start={13}
-                        end={16}
+                        start={12.5}
+                        end={15.5}
                         component={TimeSlotInput}
                         label="Korálky"
                         price={KORALE}
@@ -52,8 +52,8 @@ const Schedule = ({disabled}) => (
                     />
                     <Field
                         name="korale3"
-                        start={17}
-                        end={20}
+                        start={16}
+                        end={19}
                         component={TimeSlotInput}
                         label="Korálky"
                         price={KORALE}
@@ -64,7 +64,7 @@ const Schedule = ({disabled}) => (
                     <Field
                         name="tkani1"
                         start={9}
-                        end={14}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Tkaní"
                         price={TKANI}
@@ -72,8 +72,8 @@ const Schedule = ({disabled}) => (
                     />
                     <Field
                         name="tkani2"
-                        start={15}
-                        end={20}
+                        start={14}
+                        end={18.5}
                         component={TimeSlotInput}
                         label="Tkaní"
                         price={TKANI}
@@ -104,7 +104,7 @@ const Schedule = ({disabled}) => (
                     <Field
                         name="lucerna1"
                         start={9}
-                        end={14}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Lucerna"
                         price={LUCERNA}
@@ -112,8 +112,8 @@ const Schedule = ({disabled}) => (
                     />
                     <Field
                         name="lucerna2"
-                        start={15}
-                        end={20}
+                        start={14}
+                        end={18.5}
                         component={TimeSlotInput}
                         label="Lucerna"
                         price={LUCERNA}
@@ -133,13 +133,13 @@ const Schedule = ({disabled}) => (
                 </TableRow>
             </DayProvider>
         </Table>
-        <Table start={9} end={15} title="Neděle" disabled={disabled}>
+        <Table start={9} end={14} title="Neděle" disabled={disabled}>
             <DayProvider value="neděle">
                 <TableRow color="copper">
                     <Field
                         name="med3"
                         start={9}
-                        end={14}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Měděné výrobky"
                         price={MED}
@@ -156,21 +156,12 @@ const Schedule = ({disabled}) => (
                         price={KORALE}
                         id="entry.2049723369"
                     />
-                    <Field
-                        name="korale5"
-                        start={12}
-                        end={15}
-                        component={TimeSlotInput}
-                        label="Korálky"
-                        price={KORALE}
-                        id="entry.892378742"
-                    />
                 </TableRow>
                 <TableRow color="red">
                     <Field
                         name="tkani3"
                         start={9}
-                        end={14}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Tkaní"
                         price={TKANI}
@@ -182,7 +173,7 @@ const Schedule = ({disabled}) => (
                     <Field
                         name="lucerna3"
                         start={9}
-                        end={14}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Lucerna"
                         price={LUCERNA}
