@@ -6,7 +6,6 @@ import {getFreeSlots, isSubmitted} from 'selectors';
 import {registerSlotField} from 'actions';
 import {withDayContext} from './DayContext';
 
-const VALUE = 'ANO';
 const EMPTY = '';
 
 const mapStateToProps = (state, {input}) => ({
@@ -37,7 +36,7 @@ const mergeProps = ({freeSlots, submitted}, {onMount}, {input, start, end, label
     const disabled = freeSlots === 0;
     return ({
         active,
-        onClick: !submitted ? () => input.onChange(input.value === EMPTY ? VALUE : EMPTY) : R.always,
+        onClick: !submitted ? () => input.onChange(input.value === EMPTY ? input.name : EMPTY) : R.always,
         disabled,
         start,
         end,
