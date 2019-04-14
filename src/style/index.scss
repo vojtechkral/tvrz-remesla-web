@@ -14,11 +14,11 @@ body {
 }
 
 a {
-    color: $primary;
+    color: saturate($primary, 20%);
     &:focus,
     &:hover {
         text-decoration: none;
-        color: darken($primary, 20%);
+        color: $primary;
     }
 }
 
