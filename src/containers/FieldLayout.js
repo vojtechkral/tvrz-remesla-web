@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {FormFeedback, FormGroup, Label} from 'reactstrap';
+import {FormFeedback, FormGroup} from 'reactstrap';
+import {FieldLabel} from 'components';
 
 const FieldLayout = ({input, meta, label, inputComponent: Component, ...rest}) => {
     const showError = meta.invalid && meta.touched;
     return (
         <FormGroup>
-            {label && <Label for={input.name}>{label}</Label>}
+            {label && <FieldLabel for={input.name}>{label}</FieldLabel>}
             <Component {...input} invalid={showError} {...rest} />
             {showError && <FormFeedback>{meta.error}</FormFeedback>}
         </FormGroup>
