@@ -10,4 +10,8 @@ $cover: fade-out($bg, .3);
     dt {
         font-size: 1.2em;
     }
+
+    dd + dt {
+        margin-top: 1em;
+    }
 }
