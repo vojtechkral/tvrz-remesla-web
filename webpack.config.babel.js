@@ -16,7 +16,7 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
         ],
         output: {
             path: path.resolve(__dirname, 'dist'),
-            publicPath: devServer ? '/' : '',
+            publicPath: devServer ? '/' : '/remesla/',
             filename: devServer ? '[name].js' : '[name].[contenthash].js',
         },
         optimization: {
