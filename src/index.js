@@ -20,6 +20,10 @@ new SmoothScroll('a[href*="#"]', { // eslint-disable-line no-new, library API
 
 new SimpleLightbox({ // eslint-disable-line no-new, library API
     elements: '.craft-img',
+    closeBtnCaption: 'Zavřít',
+    nextBtnCaption: 'Další',
+    prevBtnCaption: 'Předchozí',
+    loadingCaption: 'Načítám...',
 });
 
 render(
