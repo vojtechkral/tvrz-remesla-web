@@ -109,6 +109,9 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
             }, {
                 test: /\.(jpg|png)$/,
                 loader: 'file-loader',
+                options: {
+                    name: devServer ? '[name].[ext]' : '[name].[hash].[ext]',
+                },
             }],
         },
     }),
