@@ -92,8 +92,8 @@ const Schedule = ({disabled}) => (
                     />
                     <Field
                         name="karetky2"
-                        start={15}
-                        end={19}
+                        start={14.5}
+                        end={18.5}
                         component={TimeSlotInput}
                         label="Karetkování"
                         price={KARETKY}
