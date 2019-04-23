@@ -18,12 +18,14 @@ new SmoothScroll('a[href*="#"]', { // eslint-disable-line no-new, library API
     offset: () => document.getElementById('mainNav').offsetHeight,
 });
 
-new SimpleLightbox({ // eslint-disable-line no-new, library API
-    elements: '.craft-img',
-    closeBtnCaption: 'Zavřít',
-    nextBtnCaption: 'Další',
-    prevBtnCaption: 'Předchozí',
-    loadingCaption: 'Načítám...',
+Array.from(document.getElementsByClassName('craft')).forEach((craft) => {
+    new SimpleLightbox({ // eslint-disable-line no-new, library API
+        elements: craft.getElementsByClassName('craft-img'),
+        closeBtnCaption: 'Zavřít',
+        nextBtnCaption: 'Další',
+        prevBtnCaption: 'Předchozí',
+        loadingCaption: 'Načítám...',
+    });
 });
 
 render(
