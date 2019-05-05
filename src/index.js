@@ -18,6 +18,9 @@ Sentry.init({
 
 GA.initialize('UA-139615876-1');
 GA.pageview('/');
+if (process.env.NODE_ENV === 'development') {
+    GA.set({sendHitTask: null});
+}
 
 attachTogglers();
 attachScrollListener();
