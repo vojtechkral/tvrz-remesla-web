@@ -12,7 +12,7 @@ import './style/index.scss';
 
 
 Sentry.init({
-    dsn: 'https://123831066ab64274b0eb9a2e924833e3@sentry.io/1452667',
+    dsn: process.env.NODE_ENV === 'production' ? 'https://123831066ab64274b0eb9a2e924833e3@sentry.io/1452667' : null,
 });
 
 attachTogglers();
