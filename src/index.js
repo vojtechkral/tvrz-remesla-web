@@ -1,5 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
+import * as Sentry from '@sentry/browser';
 import SmoothScroll from 'smooth-scroll';
 import SimpleLightbox from 'simple-lightbox';
 import 'simple-lightbox/dist/simpleLightbox.css';
@@ -8,6 +9,11 @@ import attachTogglers from './attachTogglers';
 import attachScrollListener from './attachScrollListener';
 import App from './App';
 import './style/index.scss';
+
+
+Sentry.init({
+    dsn: 'https://123831066ab64274b0eb9a2e924833e3@sentry.io/1452667',
+});
 
 attachTogglers();
 attachScrollListener();

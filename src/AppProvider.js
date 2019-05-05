@@ -4,6 +4,7 @@ import createSagaMiddleware from 'redux-saga';
 import {Provider} from 'react-redux';
 import RedBox from 'redbox-react';
 import {Alert} from 'reactstrap';
+import * as Sentry from '@sentry/browser';
 
 import createStore from './createStore';
 import reducer from './reducer';
@@ -37,6 +38,7 @@ export default class AppProvider extends Component {
 
     showError = (error) => {
         console.error(error); // eslint-disable-line no-console
+        Sentry.captureException(error);
         if (this.updater.isMounted(this)) {
             this.setState({error});
         } else {
