@@ -1,6 +1,7 @@
 import React from 'react';
 import {render} from 'react-dom';
 import * as Sentry from '@sentry/browser';
+import GA from 'react-ga';
 import SmoothScroll from 'smooth-scroll';
 import SimpleLightbox from 'simple-lightbox';
 import 'simple-lightbox/dist/simpleLightbox.css';
@@ -14,6 +15,9 @@ import './style/index.scss';
 Sentry.init({
     dsn: process.env.NODE_ENV === 'production' ? 'https://123831066ab64274b0eb9a2e924833e3@sentry.io/1452667' : null,
 });
+
+GA.initialize('UA-139615876-1');
+GA.pageview('/');
 
 attachTogglers();
 attachScrollListener();

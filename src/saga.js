@@ -1,4 +1,5 @@
 import * as R from 'ramda';
+import GA from 'react-ga';
 import {takeEvery, call, put, delay, select} from 'redux-saga/effects';
 import {mapKeys} from './utils';
 import {SUBMIT, updateFreeSlots, submitComplete} from './actions';
@@ -8,6 +9,10 @@ import {submit, getFreeSlots} from './api';
 const submitForm = function* submitForm({values}) {
     const ids = yield select(getIds);
     const request = mapKeys(R.flip(R.prop)(ids), values);
+    GA.event({
+        category: 'form',
+        action: 'submit',
+    });
     yield call(submit, request);
     yield put(submitComplete());
 };

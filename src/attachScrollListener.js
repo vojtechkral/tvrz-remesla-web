@@ -1,3 +1,5 @@
+import GA from 'react-ga';
+
 const OFFSET = 150;
 
 const getTop = (target) => {
@@ -8,6 +10,15 @@ const getTop = (target) => {
         element = element.offsetParent;
     }
     return result;
+};
+
+const getActiveHref = () => {
+    const active = document.querySelector('.nav-link.active');
+    if (active) {
+        return `/${active.getAttribute('href').substring(1)}`;
+    } else {
+        return '/';
+    }
 };
 
 export default () => window.addEventListener('load', () => {
@@ -26,6 +37,8 @@ export default () => window.addEventListener('load', () => {
             navbar.classList.remove('navbar-shrink');
         }
 
+        const href = getActiveHref();
+
         Array.from(document.getElementsByClassName('nav-link')).forEach((navlink) => navlink.classList.remove('active'));
         Array.from(document.getElementsByTagName('section')).forEach((section) => {
             const top = getTop(section) - OFFSET;
@@ -35,5 +48,10 @@ export default () => window.addEventListener('load', () => {
                 navlink.classList.add('active');
             }
         });
+
+        const newHref = getActiveHref();
+        if (href !== newHref) {
+            GA.pageview(newHref);
+        }
     });
 });
