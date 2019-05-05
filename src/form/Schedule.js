@@ -126,7 +126,7 @@ const Schedule = ({disabled}) => (
                         start={9}
                         end={17}
                         component={TimeSlotInput}
-                        label="Nůže a pochva"
+                        label="Nůž a pochva"
                         price={NUZ}
                         id="entry.2108715331"
                     />
