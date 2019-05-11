@@ -9,10 +9,10 @@ import {submit, getFreeSlots} from './api';
 const submitForm = function* submitForm({values}) {
     const ids = yield select(getIds);
     const request = mapKeys(R.flip(R.prop)(ids), values);
-    GA.event({
+    setTimeout(() => GA.event({
         category: 'form',
         action: 'submit',
-    });
+    }));
     yield call(submit, request);
     yield put(submitComplete());
 };
