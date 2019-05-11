@@ -20,6 +20,7 @@ GA.initialize('UA-139615876-1');
 GA.pageview('/');
 if (process.env.NODE_ENV === 'development') {
     GA.set({sendHitTask: null});
+    // GA.set({sendHitTask: (model) => console.log('GA', model.get('hitPayload'))});
 }
 
 attachTogglers();
