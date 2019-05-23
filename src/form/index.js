@@ -44,6 +44,7 @@ const Form = ({handleSubmit, error}) => (
                     placeholder="Tvoje telefonní číslo"
                     component={StringInput}
                     validate={[required, validPhone]}
+                    id="entry.315050214"
                 />
             </Col>
         </Row>
