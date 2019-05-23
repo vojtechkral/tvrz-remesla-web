@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import {Form as BootstrapForm, Row, Col, Alert} from 'reactstrap';
 import {TextInput} from 'components';
 import {Field, StringInput} from 'containers';
-import {required, validEmail} from 'utils';
+import {required, validEmail, validPhone} from 'utils';
 import submit from 'submit';
 import {getIntervals} from 'selectors';
 import {REGISTRATION_FORM} from '../constants';
@@ -17,7 +17,7 @@ import Sum from './Sum';
 const Form = ({handleSubmit, error}) => (
     <BootstrapForm className="w-100" onSubmit={handleSubmit}>
         <Row>
-            <Col md={6}>
+            <Col lg={4}>
                 <Field
                     name="name"
                     label="Jméno a příjmení"
@@ -27,7 +27,7 @@ const Form = ({handleSubmit, error}) => (
                     id="entry.2146001187"
                 />
             </Col>
-            <Col md={6}>
+            <Col lg={4}>
                 <Field
                     name="email"
                     label="E-mail"
@@ -35,6 +35,15 @@ const Form = ({handleSubmit, error}) => (
                     component={StringInput}
                     validate={[required, validEmail]}
                     id="entry.1672151647"
+                />
+            </Col>
+            <Col lg={4}>
+                <Field
+                    name="phone"
+                    label="Telefon"
+                    placeholder="Tvoje telefonní číslo"
+                    component={StringInput}
+                    validate={[required, validPhone]}
                 />
             </Col>
         </Row>
