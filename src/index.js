@@ -1,3 +1,5 @@
+import React from 'react';
+import {render} from 'react-dom';
 import * as Sentry from '@sentry/browser';
 import GA from 'react-ga';
 import SmoothScroll from 'smooth-scroll';
@@ -6,6 +8,7 @@ import 'simple-lightbox/dist/simpleLightbox.css';
 
 import attachTogglers from './attachTogglers';
 import attachScrollListener from './attachScrollListener';
+import App from './App';
 import './style/index.scss';
 
 
@@ -38,3 +41,8 @@ Array.from(document.getElementsByClassName('craft')).forEach((craft) => {
         loadingCaption: 'Načítám...',
     });
 });
+
+render(
+    <App />,
+    document.getElementById('register-form'),
+);
