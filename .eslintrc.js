@@ -42,4 +42,9 @@ module.exports = {
         'jsx-a11y/label-has-for': 'off',
         'jsx-a11y/label-has-associated-control': 'off',
     },
+    globals: {
+        __SENTRY_RELEASE: false,
+        __DEVELOPMENT: false,
+        __PRODUCTION: false,
+    }
 };

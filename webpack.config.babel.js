@@ -5,8 +5,12 @@ import CircularDependencyPlugin from 'circular-dependency-plugin';
 import UglifyJsPlugin from 'uglifyjs-webpack-plugin';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import sass from 'sass';
+import SentryPlugin from '@sentry/webpack-plugin';
+import GitRevisionPlugin from 'git-revision-webpack-plugin';
 
 const array = (...target) => target.filter(Boolean);
+
+const gitRevisionPlugin = new GitRevisionPlugin();
 
 export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 'development'))(
     (devServer, dev) => ({
@@ -32,9 +36,10 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
                         comments: false,
                     },
                 },
+                sourceMap: true,
             })],
         },
-        devtool: dev ? 'cheap-module-source-map' : false,
+        devtool: dev ? 'cheap-module-source-map' : 'source-map',
         resolve: {
             modules: ['src', 'node_modules'],
         },
@@ -43,6 +48,7 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
             inline: true,
         },
         plugins: array(
+            gitRevisionPlugin,
             new HtmlWebpackPlugin({
                 template: 'src/index.html',
                 inject: true,
@@ -54,6 +60,15 @@ export default ((config) => ({devserver}, {mode}) => config(devserver, mode === 
             }),
             !devServer && new MiniCssExtractPlugin({
                 filename: '[name].[contenthash].css',
+            }),
+            !dev && new SentryPlugin({
+                release: gitRevisionPlugin.commithash(),
+                include: path.resolve(__dirname, 'dist'),
+            }),
+            new webpack.DefinePlugin({
+                __SENTRY_RELEASE: JSON.stringify(gitRevisionPlugin.commithash()),
+                __DEVELOPMENT: dev,
+                __PRODUCTION: !dev,
             }),
         ),
         module: {

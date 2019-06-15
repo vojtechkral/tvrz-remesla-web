@@ -11,14 +11,14 @@ import attachScrollListener from './attachScrollListener';
 import App from './App';
 import './style/index.scss';
 
-
 Sentry.init({
-    dsn: process.env.NODE_ENV === 'production' ? 'https://123831066ab64274b0eb9a2e924833e3@sentry.io/1452667' : null,
+    release: __SENTRY_RELEASE,
+    dsn: __PRODUCTION ? 'https://123831066ab64274b0eb9a2e924833e3@sentry.io/1452667' : null,
 });
 
 GA.initialize('UA-139615876-1');
 GA.pageview('/');
-if (process.env.NODE_ENV === 'development') {
+if (__DEVELOPMENT) {
     GA.set({sendHitTask: null});
     // GA.set({sendHitTask: (model) => console.log('GA', model.get('hitPayload'))});
 }

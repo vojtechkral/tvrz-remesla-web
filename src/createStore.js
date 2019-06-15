@@ -6,7 +6,7 @@ export default (reducer, sagaMiddleware) => {
     const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__; // eslint-disable-line no-underscore-dangle
     const middlewareList = [sagaMiddleware];
 
-    if (process.env.NODE_ENV === 'development') {
+    if (__DEVELOPMENT) {
         middlewareList.push(reduxFreeze);
     }
 

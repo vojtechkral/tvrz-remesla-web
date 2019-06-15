@@ -54,13 +54,13 @@ export default class AppProvider extends Component {
         const {error} = this.state;
         const {children} = this.props;
         if (error) {
-            if (process.env.NODE_ENV === 'development') {
+            if (__DEVELOPMENT) {
                 return <RedBox error={error} />;
             }
             return (
                 <Alert color="danger">
                     Něco se pokazilo. Zkus <a onClick={() => window.location.reload()} href="#register">obnovit</a> stránku.
-                    Pokud to nepomůže, napiš nám na <a href="mailto:tvrz@instruktori.cz">tvrz@instruktori.cz</a>.
+                    Pokud to nepomůže, napiš nám na <a href="mailto:tvrz@tvrz.net">tvrz@tvrz.net</a>.
                 </Alert>
             );
         } else {
