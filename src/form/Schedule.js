@@ -5,7 +5,7 @@ import {Field} from 'redux-form';
 import {TableRow, Table, ScheduleContainer} from 'components';
 import {TimeSlotInput, DayProvider} from 'containers';
 import {isSubmitted} from 'selectors';
-import {LUCERNA, TKANI, KORALE, NUZ, MED, KARETKY} from 'prices';
+import {LUCERNA, TKANI, KORALE, NUZ, MED, KARETKY, NUZ_SAM, POCHVA_SAMA} from 'prices';
 
 // Array.from().forEach(el => console.log(el.getAttribute('aria-label'), el.name);
 
@@ -75,7 +75,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Nůž"
-                        price={NUZ}
+                        price={NUZ_SAM}
                         id="entry.1000632899"
                     />
                 </TableRow>
@@ -86,7 +86,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Pochva"
-                        price={NUZ}
+                        price={POCHVA_SAMA}
                         id="entry.1516895660"
                     />
                 </TableRow>
@@ -156,7 +156,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Nůž"
-                        price={NUZ}
+                        price={NUZ_SAM}
                         id="entry.1293471047"
                     />
                 </TableRow>
@@ -167,7 +167,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Pochva"
-                        price={NUZ}
+                        price={POCHVA_SAMA}
                         id="entry.314434707"
                     />
                 </TableRow>
@@ -237,7 +237,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Nůž"
-                        price={NUZ}
+                        price={NUZ_SAM}
                         id="entry.1197471540"
                     />
                 </TableRow>
@@ -248,7 +248,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Pochva"
-                        price={NUZ}
+                        price={POCHVA_SAMA}
                         id="entry.304276660"
                     />
                 </TableRow>
