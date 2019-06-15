@@ -24,7 +24,7 @@ const Form = ({handleSubmit, error}) => (
                     placeholder="Tvoje jméno"
                     component={StringInput}
                     validate={[required]}
-                    id="entry.2146001187"
+                    id="entry.353496457"
                 />
             </Col>
             <Col md={6}>
@@ -34,7 +34,7 @@ const Form = ({handleSubmit, error}) => (
                     placeholder="Tvůj e-mail"
                     component={StringInput}
                     validate={[required, validEmail]}
-                    id="entry.1672151647"
+                    id="entry.1825108357"
                 />
             </Col>
         </Row>
@@ -47,7 +47,7 @@ const Form = ({handleSubmit, error}) => (
             component={TextInput}
             name="message"
             placeholder="Chceš nám něco vzkázat?"
-            id="entry.1667341310"
+            id="entry.241532143"
         />
         <div className="d-flex justify-content-center">
             <SubmitContainer />

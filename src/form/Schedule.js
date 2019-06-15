@@ -13,174 +13,115 @@ const Schedule = ({disabled}) => (
             <DayProvider value="sobota">
                 <TableRow color="copper">
                     <Field
-                        name="med1"
+                        name="med-so-AM"
                         start={9}
                         end={13.5}
                         component={TimeSlotInput}
                         label="Měděné výrobky"
                         price={MED}
-                        id="entry.2001535182"
+                        id="entry.991687023"
                     />
                     <Field
-                        name="med2"
+                        name="med-so-PM"
                         start={14}
                         end={18.5}
                         component={TimeSlotInput}
                         label="Měděné výrobky"
                         price={MED}
-                        id="entry.863979832"
+                        id="entry.2142815324"
                     />
                 </TableRow>
                 <TableRow color="green">
                     <Field
-                        name="korale1"
+                        name="korale-so-AM"
                         start={9}
-                        end={12}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Korálky"
                         price={KORALE}
-                        id="entry.1210935918"
+                        id="entry.375198944"
                     />
                     <Field
-                        name="korale2"
-                        start={12.5}
-                        end={15.5}
+                        name="korale-so-PM"
+                        start={14}
+                        end={18.5}
                         component={TimeSlotInput}
                         label="Korálky"
                         price={KORALE}
-                        id="entry.425127990"
-                    />
-                    <Field
-                        name="korale3"
-                        start={16}
-                        end={19}
-                        component={TimeSlotInput}
-                        label="Korálky"
-                        price={KORALE}
-                        id="entry.1590153636"
+                        id="entry.366149748"
                     />
                 </TableRow>
                 <TableRow color="red">
                     <Field
-                        name="tkani1"
+                        name="hreben-so-AM"
                         start={9}
                         end={13.5}
                         component={TimeSlotInput}
                         label="Tkaní"
                         price={TKANI}
-                        id="entry.299497980"
+                        id="entry.1854833292"
                     />
                     <Field
-                        name="tkani2"
+                        name="hreben-so-PM"
                         start={14}
                         end={18.5}
                         component={TimeSlotInput}
                         label="Tkaní"
                         price={TKANI}
-                        id="entry.132012809"
+                        id="entry.309083307"
                     />
                 </TableRow>
                 <TableRow color="purple">
                     <Field
-                        name="karetky1"
-                        start={10}
-                        end={14}
+                        name="karetky-so-AM"
+                        start={9}
+                        end={13.5}
                         component={TimeSlotInput}
                         label="Karetkování"
                         price={KARETKY}
-                        id="entry.1370085336"
+                        id="entry.1593740732"
                     />
                     <Field
-                        name="karetky2"
-                        start={14.5}
+                        name="karetky-so-PM"
+                        start={14}
                         end={18.5}
                         component={TimeSlotInput}
                         label="Karetkování"
                         price={KARETKY}
-                        id="entry.413199985"
+                        id="entry.1773492366"
                     />
                 </TableRow>
                 <TableRow>
                     <Field
-                        name="lucerna1"
+                        name="lucerna-so-AM"
                         start={9}
                         end={13.5}
                         component={TimeSlotInput}
                         label="Lucerna"
                         price={LUCERNA}
-                        id="entry.1007779779"
+                        id="entry.1697966926"
                     />
                     <Field
-                        name="lucerna2"
+                        name="lucerna-so-PM"
                         start={14}
                         end={18.5}
                         component={TimeSlotInput}
                         label="Lucerna"
                         price={LUCERNA}
-                        id="entry.1997255898"
+                        id="entry.1737503332"
                     />
                 </TableRow>
                 <TableRow color="steel">
                     <Field
-                        name="nuz"
+                        name="nuz-so"
                         start={9}
                         end={17}
                         component={TimeSlotInput}
                         label="Nůž a pochva"
                         price={NUZ}
-                        id="entry.2108715331"
+                        id="entry.150792607"
                     />
                 </TableRow>
-            </DayProvider>
-        </Table>
-        <Table start={9} end={14} title="Neděle" disabled={disabled}>
-            <DayProvider value="neděle">
-                <TableRow color="copper">
-                    <Field
-                        name="med3"
-                        start={9}
-                        end={13.5}
-                        component={TimeSlotInput}
-                        label="Měděné výrobky"
-                        price={MED}
-                        id="entry.599933823"
-                    />
-                </TableRow>
-                <TableRow color="green">
-                    <Field
-                        name="korale4"
-                        start={9}
-                        end={12}
-                        component={TimeSlotInput}
-                        label="Korálky"
-                        price={KORALE}
-                        id="entry.2049723369"
-                    />
-                </TableRow>
-                <TableRow color="red">
-                    <Field
-                        name="tkani3"
-                        start={9}
-                        end={13.5}
-                        component={TimeSlotInput}
-                        label="Tkaní"
-                        price={TKANI}
-                        id="entry.905015196"
-                    />
-                </TableRow>
-                <TableRow color="purple" />
-                <TableRow>
-                    <Field
-                        name="lucerna3"
-                        start={9}
-                        end={13.5}
-                        component={TimeSlotInput}
-                        label="Lucerna"
-                        price={LUCERNA}
-                        id="entry.1324063131"
-                    />
-                </TableRow>
-                <TableRow color="steel" />
             </DayProvider>
         </Table>
     </ScheduleContainer>

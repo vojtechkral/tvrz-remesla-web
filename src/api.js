@@ -2,7 +2,7 @@ import superagent from 'superagent';
 import * as R from 'ramda';
 
 const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
-const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSc3xNA_368dW2CvwbQ997jJYsCFV0KPVA81wlYO0H010Vv5ig/formResponse';
+const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeXfWlgY2nektgekmEZ1Ju_J95enVR0c_lyBgEmE8rJ_vYHUw/formResponse';
 
 export const submit = (values) => superagent
     .post(`${CORS_URL}${FORM_URL}`)
@@ -10,7 +10,7 @@ export const submit = (values) => superagent
     .send(values);
 
 const API_KEY = 'AIzaSyCqgsnrf_ptIMULLJ0bN5IWlWFZQ0VkK84';
-const SPREADSHEET_ID = '1LxU5o940KeYSs5XnjtIVCIVTe7neUlqQo7akL3mBu7o';
+const SPREADSHEET_ID = '1U3NW8vBD63WtNY12KoLj3es0rFrAilalL8t9_YPY0oc';
 const RANGE = 'public!A1:Q2';
 
 const GDOC_ULR = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`;
