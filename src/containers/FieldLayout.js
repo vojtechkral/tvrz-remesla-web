@@ -8,7 +8,7 @@ const FieldLayout = ({input, meta, label, inputComponent: Component, ...rest}) =
     return (
         <FormGroup>
             {label && <FieldLabel for={input.name}>{label}</FieldLabel>}
-            <Component {...input} invalid={showError} {...rest} />
+            <Component {...input} invalid={showError} {...rest} id={input.name} />
             {showError && <FormFeedback>{meta.error}</FormFeedback>}
         </FormGroup>
     );

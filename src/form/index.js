@@ -5,7 +5,7 @@ import {reduxForm} from 'redux-form';
 import {connect} from 'react-redux';
 import {Form as BootstrapForm, Row, Col, Alert} from 'reactstrap';
 import {TextInput} from 'components';
-import {Field, StringInput} from 'containers';
+import {Checkbox, CheckboxLayout, Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
 import submit from 'submit';
 import {getIntervals} from 'selectors';
@@ -48,6 +48,13 @@ const Form = ({handleSubmit, error}) => (
             name="message"
             placeholder="Chceš nám něco vzkázat?"
             id="entry.241532143"
+        />
+        <Field
+            name="photo-agreement"
+            label="Uděluji souhlas s focením"
+            component={Checkbox}
+            layout={CheckboxLayout}
+            id="entry.1097476779"
         />
         <div className="d-flex justify-content-center">
             <SubmitContainer />

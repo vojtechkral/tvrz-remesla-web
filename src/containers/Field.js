@@ -6,13 +6,13 @@ import {registerField} from 'actions';
 import {isSubmitted} from 'selectors';
 import FieldLayout from './FieldLayout';
 
-const Field = ({component, onMount, ...rest}) => {
+const Field = ({component, onMount, layout, ...rest}) => {
     useEffect(onMount, []);
     return (
         <ReduxField
             {...rest}
             inputComponent={component}
-            component={FieldLayout}
+            component={layout}
         />
     );
 };
@@ -20,6 +20,11 @@ const Field = ({component, onMount, ...rest}) => {
 Field.propTypes = {
     component: PropTypes.func.isRequired,
     onMount: PropTypes.func.isRequired,
+    layout: PropTypes.func,
+};
+
+Field.defaultProps = {
+    layout: FieldLayout,
 };
 
 const mapStateToProps = (state) => ({
