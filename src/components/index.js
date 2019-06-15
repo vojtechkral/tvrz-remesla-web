@@ -4,3 +4,4 @@ export {default as TimeSlot} from './TimeSlot';
 export {default as ScheduleContainer} from './ScheduleContainer';
 export {default as TextInput} from './TextInput';
 export {default as FieldLabel} from './FieldLabel';
+export {default as PhotoAgreementText} from './PhotoAgreementText';

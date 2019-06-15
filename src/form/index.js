@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import {reduxForm} from 'redux-form';
 import {connect} from 'react-redux';
 import {Form as BootstrapForm, Row, Col, Alert} from 'reactstrap';
-import {TextInput} from 'components';
+import {TextInput, PhotoAgreementText} from 'components';
 import {Checkbox, CheckboxLayout, Field, StringInput} from 'containers';
 import {required, validEmail} from 'utils';
 import submit from 'submit';
@@ -56,6 +56,7 @@ const Form = ({handleSubmit, error}) => (
             layout={CheckboxLayout}
             id="entry.1097476779"
         />
+        <PhotoAgreementText />
         <div className="d-flex justify-content-center">
             <SubmitContainer />
         </div>
@@ -80,5 +81,8 @@ export default R.compose(
     reduxForm({
         form: REGISTRATION_FORM,
         onSubmit: submit,
+        initialValues: {
+            'photo-agreement': true,
+        },
     }),
 )(Form);
