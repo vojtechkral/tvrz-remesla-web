@@ -5,14 +5,25 @@ import {Field} from 'redux-form';
 import {TableRow, Table, ScheduleContainer} from 'components';
 import {TimeSlotInput, DayProvider} from 'containers';
 import {isSubmitted} from 'selectors';
-import {LUCERNA, TKANI, KORALE, NUZ, MED, KARETKY, NUZ_SAM, POCHVA_SAMA} from 'prices';
+import {LUCERNA, TKANI, KORALE, MED, NUZ, POCHVA, PRACE} from 'prices';
 
-// Array.from().forEach(el => console.log(el.getAttribute('aria-label'), el.name);
+// Array.from(document.getElementsByTagName('input')).forEach(el => console.log(el.getAttribute('aria-label'), el.name));
 
 const Schedule = ({disabled}) => (
     <ScheduleContainer>
-        <Table start={14} end={19} title="Středa" disabled={disabled}>
+        <Table start={9} end={19} title="Středa" disabled={disabled}>
             <DayProvider value="středa">
+                <TableRow color="red">
+                    <Field
+                        name="prace-st"
+                        start={9}
+                        end={13}
+                        component={TimeSlotInput}
+                        label="Brigáda"
+                        price={PRACE}
+                        id="entry.1636404895"
+                    />
+                </TableRow>
                 <TableRow color="copper">
                     <Field
                         name="med-st"
@@ -77,7 +88,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Nůž"
-                        price={NUZ_SAM}
+                        price={NUZ}
                         id="entry.1000632899"
                     />
                 </TableRow>
@@ -88,14 +99,25 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Pochva"
-                        price={POCHVA_SAMA}
+                        price={POCHVA}
                         id="entry.1516895660"
                     />
                 </TableRow>
             </DayProvider>
         </Table>
-        <Table start={14} end={19} title="Čtvrtek" disabled={disabled}>
+        <Table start={9} end={19} title="Čtvrtek" disabled={disabled}>
             <DayProvider value="čtvrtek">
+                <TableRow color="red">
+                    <Field
+                        name="prace-ct"
+                        start={9}
+                        end={13}
+                        component={TimeSlotInput}
+                        label="Brigáda"
+                        price={PRACE}
+                        id="entry.1637730733"
+                    />
+                </TableRow>
                 <TableRow color="copper">
                     <Field
                         name="med-ct"
@@ -160,7 +182,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Nůž"
-                        price={NUZ_SAM}
+                        price={NUZ}
                         id="entry.1293471047"
                     />
                 </TableRow>
@@ -171,14 +193,25 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Pochva"
-                        price={POCHVA_SAMA}
+                        price={POCHVA}
                         id="entry.314434707"
                     />
                 </TableRow>
             </DayProvider>
         </Table>
-        <Table start={14} end={19} title="Pátek" disabled={disabled}>
+        <Table start={9} end={19} title="Pátek" disabled={disabled}>
             <DayProvider value="pátek">
+                <TableRow color="red">
+                    <Field
+                        name="prace-pa"
+                        start={9}
+                        end={13}
+                        component={TimeSlotInput}
+                        label="Brigáda"
+                        price={PRACE}
+                        id="entry.2121960805"
+                    />
+                </TableRow>
                 <TableRow color="copper">
                     <Field
                         name="med-pa"
@@ -243,7 +276,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Nůž"
-                        price={NUZ_SAM}
+                        price={NUZ}
                         id="entry.1197471540"
                     />
                 </TableRow>
@@ -254,7 +287,7 @@ const Schedule = ({disabled}) => (
                         end={18.5}
                         component={TimeSlotInput}
                         label="Pochva"
-                        price={POCHVA_SAMA}
+                        price={POCHVA}
                         id="entry.304276660"
                     />
                 </TableRow>
@@ -368,11 +401,20 @@ const Schedule = ({disabled}) => (
                     <Field
                         name="nuz-so"
                         start={9}
-                        end={17}
+                        end={13.5}
                         component={TimeSlotInput}
-                        label="Nůž a pochva"
+                        label="Nůž"
                         price={NUZ}
                         id="entry.150792607"
+                    />
+                    <Field
+                        name="pochva-so"
+                        start={14}
+                        end={18.5}
+                        component={TimeSlotInput}
+                        label="Pochva"
+                        price={POCHVA}
+                        id="entry.1762096591"
                     />
                 </TableRow>
             </DayProvider>
