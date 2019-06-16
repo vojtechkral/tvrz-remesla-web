@@ -46,6 +46,7 @@ const Schedule = ({disabled}) => (
                         id="entry.924123730"
                     />
                 </TableRow>
+                {/*
                 <TableRow color="purple">
                     <Field
                         name="karetky-st"
@@ -57,6 +58,7 @@ const Schedule = ({disabled}) => (
                         id="entry.709113823"
                     />
                 </TableRow>
+                */}
                 <TableRow color="goldenrod">
                     <Field
                         name="lucerna-st"
@@ -127,6 +129,7 @@ const Schedule = ({disabled}) => (
                         id="entry.9168815"
                     />
                 </TableRow>
+                {/*
                 <TableRow color="purple">
                     <Field
                         name="karetky-ct"
@@ -138,6 +141,7 @@ const Schedule = ({disabled}) => (
                         id="entry.1571115649"
                     />
                 </TableRow>
+                */}
                 <TableRow color="goldenrod">
                     <Field
                         name="lucerna-ct"
@@ -208,6 +212,7 @@ const Schedule = ({disabled}) => (
                         id="entry.1028123903"
                     />
                 </TableRow>
+                {/*
                 <TableRow color="purple">
                     <Field
                         name="karetky-pa"
@@ -219,6 +224,7 @@ const Schedule = ({disabled}) => (
                         id="entry.526705587"
                     />
                 </TableRow>
+                */}
                 <TableRow color="goldenrod">
                     <Field
                         name="lucerna-pa"
@@ -316,6 +322,7 @@ const Schedule = ({disabled}) => (
                         id="entry.309083307"
                     />
                 </TableRow>
+                {/*
                 <TableRow color="purple">
                     <Field
                         name="karetky-so-AM"
@@ -336,6 +343,7 @@ const Schedule = ({disabled}) => (
                         id="entry.1773492366"
                     />
                 </TableRow>
+                */}
                 <TableRow>
                     <Field
                         name="lucerna-so-AM"
