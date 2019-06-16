@@ -20,7 +20,7 @@ const getSum = createSelector(
 );
 
 const mapStateToProps = (state) => ({
-    sum: BASE + getSum(state),
+    sum: Math.max(BASE + getSum(state), 0),
 });
 
 const mergeProps = ({sum}) => ({
