@@ -46,7 +46,7 @@ const Schedule = ({disabled}) => (
                         id="entry.749940226"
                     />
                 </TableRow>
-                <TableRow color="red">
+                <TableRow color="purple">
                     <Field
                         name="hreben-st"
                         start={14}
@@ -140,7 +140,7 @@ const Schedule = ({disabled}) => (
                         id="entry.452340918"
                     />
                 </TableRow>
-                <TableRow color="red">
+                <TableRow color="purple">
                     <Field
                         name="hreben-ct"
                         start={14}
@@ -234,7 +234,7 @@ const Schedule = ({disabled}) => (
                         id="entry.1717436506"
                     />
                 </TableRow>
-                <TableRow color="red">
+                <TableRow color="purple">
                     <Field
                         name="hreben-pa"
                         start={14}
@@ -335,7 +335,7 @@ const Schedule = ({disabled}) => (
                         id="entry.366149748"
                     />
                 </TableRow>
-                <TableRow color="red">
+                <TableRow color="purple">
                     <Field
                         name="hreben-so-AM"
                         start={9}
