@@ -11,7 +11,7 @@ import {LUCERNA, TKANI, KORALE, MED, NUZ, POCHVA, PRACE} from 'prices';
 
 const Schedule = ({disabled}) => (
     <ScheduleContainer>
-        <Table start={9} end={19} title="Středa" disabled={disabled}>
+        <Table start={9} end={19} title="Středa 21. 8." disabled={disabled}>
             <DayProvider value="středa">
                 <TableRow color="red">
                     <Field
@@ -105,7 +105,7 @@ const Schedule = ({disabled}) => (
                 </TableRow>
             </DayProvider>
         </Table>
-        <Table start={9} end={19} title="Čtvrtek" disabled={disabled}>
+        <Table start={9} end={19} title="Čtvrtek 22. 8." disabled={disabled}>
             <DayProvider value="čtvrtek">
                 <TableRow color="red">
                     <Field
@@ -199,7 +199,7 @@ const Schedule = ({disabled}) => (
                 </TableRow>
             </DayProvider>
         </Table>
-        <Table start={9} end={19} title="Pátek" disabled={disabled}>
+        <Table start={9} end={19} title="Pátek 23. 8." disabled={disabled}>
             <DayProvider value="pátek">
                 <TableRow color="red">
                     <Field
@@ -293,7 +293,7 @@ const Schedule = ({disabled}) => (
                 </TableRow>
             </DayProvider>
         </Table>
-        <Table start={9} end={19} title="Sobota" disabled={disabled}>
+        <Table start={9} end={19} title="Sobota 24. 8" disabled={disabled}>
             <DayProvider value="sobota">
                 <TableRow color="copper">
                     <Field
