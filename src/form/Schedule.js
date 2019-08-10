@@ -5,7 +5,7 @@ import {Field} from 'redux-form';
 import {TableRow, Table, ScheduleContainer} from 'components';
 import {TimeSlotInput, DayProvider} from 'containers';
 import {isSubmitted} from 'selectors';
-import {LUCERNA, TKANI, KORALE, MED, NUZ, POCHVA, PRACE} from 'prices';
+import {LUCERNA, TKANI, KORALE, MED, NUZ, POCHVA, PRACE, KARETKY} from 'prices';
 
 // Array.from(document.getElementsByTagName('input')).forEach(el => console.log(el.getAttribute('aria-label'), el.name));
 
@@ -35,7 +35,8 @@ const Schedule = ({disabled}) => (
                         id="entry.1615155782"
                     />
                 </TableRow>
-                {/*<TableRow color="green">
+                {/*
+                <TableRow color="green">
                     <Field
                         name="korale-st"
                         start={14}
@@ -45,7 +46,8 @@ const Schedule = ({disabled}) => (
                         price={KORALE}
                         id="entry.749940226"
                     />
-                </TableRow>*/}
+                </TableRow>
+                */}
                 <TableRow color="purple">
                     <Field
                         name="hreben-st"
@@ -355,17 +357,17 @@ const Schedule = ({disabled}) => (
                         id="entry.309083307"
                     />
                 </TableRow>
-                {/*
-                <TableRow color="purple">
+                <TableRow color="red">
                     <Field
                         name="karetky-so-AM"
-                        start={9}
-                        end={13.5}
+                        start={10}
+                        end={18}
                         component={TimeSlotInput}
                         label="Karetkování"
                         price={KARETKY}
                         id="entry.1593740732"
                     />
+                    {/*
                     <Field
                         name="karetky-so-PM"
                         start={14}
@@ -375,8 +377,8 @@ const Schedule = ({disabled}) => (
                         price={KARETKY}
                         id="entry.1773492366"
                     />
+                    */}
                 </TableRow>
-                */}
                 <TableRow>
                     <Field
                         name="lucerna-so-AM"
