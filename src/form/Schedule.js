@@ -35,7 +35,7 @@ const Schedule = ({disabled}) => (
                         id="entry.1615155782"
                     />
                 </TableRow>
-                <TableRow color="green">
+                {/*<TableRow color="green">
                     <Field
                         name="korale-st"
                         start={14}
@@ -45,7 +45,7 @@ const Schedule = ({disabled}) => (
                         price={KORALE}
                         id="entry.749940226"
                     />
-                </TableRow>
+                </TableRow>*/}
                 <TableRow color="purple">
                     <Field
                         name="hreben-st"
