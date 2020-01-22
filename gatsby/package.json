@@ -6,7 +6,9 @@
   "author": "Tomáš Vejpustek <tom.vejpustek@centrum.cz>",
   "dependencies": {
     "bootstrap": "4.4.1",
+    "classnames": "2.2.6",
     "gatsby": "2.18.21",
+    "gatsby-background-image": "0.9.12",
     "gatsby-image": "2.2.38",
     "gatsby-plugin-manifest": "2.2.37",
     "gatsby-plugin-offline": "3.0.31",
@@ -15,6 +17,7 @@
     "gatsby-plugin-sharp": "2.3.13",
     "gatsby-source-filesystem": "2.1.46",
     "gatsby-transformer-sharp": "2.3.12",
+    "intersection-observer": "0.7.0",
     "node-sass": "4.13.0",
     "prop-types": "15.7.2",
     "react": "16.12.0",
