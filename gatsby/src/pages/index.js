@@ -2,7 +2,8 @@ import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
 import SEO from "../components/seo"
 import {Section} from '../components';
-import '../style.scss';
+import {Footer, Masthead} from '../containers';
+import './style.scss';
 
 export default () => {
     const infoBg = useStaticQuery(graphql`
@@ -18,8 +19,9 @@ export default () => {
     `);
     return (
         <>
-            <SEO title="Home" />
-            <Section bgImage={infoBg.background.childImageSharp.fluid}>
+            <SEO lang="cs" />
+            <Masthead />
+            <Section>
                 <h2>O akci</h2>
                 <p>Řemesla na Tvrzi rosické je prázdninový workshop tradičních řemesel,
                     který tě po tři odpoledne od 21. do 23.&nbsp;srpna a po celý den v&nbsp;sobotu 24.&nbsp;srpna zároveň přenese
@@ -44,6 +46,10 @@ export default () => {
                     Jenom pozor na praktičnost &ndash; počítej s&nbsp;tím, že se pohybuješ v&nbsp;prostředí
                     ohně, dřeva, uhlí, hlíny, slámy, &hellip;</p>
             </Section>
+            <Section bgImage={infoBg.background.childImageSharp.fluid}>
+                <h2>Informace</h2>
+            </Section>
+            <Footer />
         </>
     );
 };

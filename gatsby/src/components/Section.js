@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import bootstrap from './bootstrap.module.scss';
+import bootstrap from '../bootstrap.module.scss';
 import styles from './Section.module.scss';
 
 import BackgroundImage from 'gatsby-background-image';

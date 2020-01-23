@@ -1,0 +1,8 @@
+@import "../variables";
+
+.main {
+    color: $gray-500;
+    text-align: center;
+    padding: 5rem 0;
+    background-image: linear-gradient(to bottom, $bg, $black 100%);
+}

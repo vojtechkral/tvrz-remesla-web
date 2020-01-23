@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Řemesla na Tvrzi rosické III`,
+    title: 'Řemesla na Tvrzi rosické',
+    edition: 'III',
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: 'Tvrz',
+    year: 2020,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
