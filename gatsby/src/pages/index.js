@@ -27,8 +27,8 @@ export default () => {
         <>
             <SEO lang="cs" />
             <Navbar title={site.siteMetadata.title}>
-                <NavItem section="about">O akci</NavItem>
-                <NavItem section="info">Informace</NavItem>
+                <NavItem target="about">O akci</NavItem>
+                <NavItem target="info">Informace</NavItem>
             </Navbar>
             <Masthead />
             <Section name="about">

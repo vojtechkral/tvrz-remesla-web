@@ -1,14 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import {useScrollElement} from './scroller';
+
 import bootstrap from '../bootstrap.module.scss';
 import styles from './Section.module.scss';
 
 import BackgroundImage from 'gatsby-background-image';
 
 const Section = ({name, children, bgImage}) => {
+    const scrollRef = useScrollElement(name);
+
     const content = (
-        <div className={bootstrap.container}>
+        <div
+            className={bootstrap.container}
+            ref={scrollRef}
+        >
             {children}
         </div>
     );
@@ -19,13 +26,17 @@ const Section = ({name, children, bgImage}) => {
                 Tag="section"
                 fluid={[styles.gradient, bgImage]}
                 className={styles.main}
+                id={`#${name}`}
             >
                 {content}
             </BackgroundImage>
         )
     } else {
         return (
-            <section className={styles.main}>
+            <section
+                id={`#${name}`}
+                className={styles.main}
+            >
                 {content}
             </section>
         );
