@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
+import {animateScroll} from 'react-scroll';
 
 import {NavbarContextProvider} from './navbarContext';
 
@@ -23,6 +24,10 @@ const Navbar = ({title, children}) => {
         return () => window.removeEventListener('scroll', onScroll);
     }, [setShrunk]);
     const setHeightRef = useCallback((element) => setHeight(element ? element.offsetHeight : 0), [setHeight]);
+    const onBrandClick = (event) => {
+        event.preventDefault();
+        animateScroll.scrollToTop();
+    }
 
     return (
         <nav
@@ -36,7 +41,13 @@ const Navbar = ({title, children}) => {
             ref={setHeightRef}
         >
             <div className={bootstrap.container}>
-                <a href="#top" className={classnames(style.brand, bootstrap.navbarBrand)}>{title}</a>
+                <a
+                    href="#"
+                    className={classnames(style.brand, bootstrap.navbarBrand)}
+                    onClick={onBrandClick}
+                >
+                    {title}
+                </a>
                 <button
                     type="button"
                     onClick={() => setMenuVisible((visible) => !visible)}
