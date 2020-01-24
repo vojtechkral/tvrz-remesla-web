@@ -3,13 +3,14 @@ import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {Link} from 'react-scroll';
 
-import {useIsShrunk} from './shrinkContext';
+import {useNavbarContext} from './navbarContext';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './NavItem.module.scss';
 
 const NavItem = ({target, children}) => {
-    const shrunk = useIsShrunk();
+    const {shrunk, height} = useNavbarContext();
+
     return (
         <li className={classnames(bootstrap.navItem, style.main)}>
             <Link
@@ -24,6 +25,7 @@ const NavItem = ({target, children}) => {
                 href={`#${target}`}
                 to={target}
                 activeClass={style.active}
+                offset={-height}
             >
                 {children}
             </Link>

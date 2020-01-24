@@ -1,10 +1,10 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 
-import {ShrinkContextProvider} from './shrinkContext';
+import {NavbarContextProvider} from './navbarContext';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './Navbar.module.scss';
@@ -13,6 +13,7 @@ const isScrolled = () => window.scrollY > 50;
 
 const Navbar = ({title, children}) => {
     const [menuVisible, setMenuVisible] = useState(false);
+    const [height, setHeight] = useState(0);
     const [shrunk, setShrunk] = useState(!isScrolled());
     useEffect(() => {
         const onScroll = () => {
@@ -21,6 +22,7 @@ const Navbar = ({title, children}) => {
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
     }, [setShrunk]);
+    const setHeightRef = useCallback((element) => setHeight(element ? element.offsetHeight : 0), [setHeight]);
 
     return (
         <nav
@@ -31,6 +33,7 @@ const Navbar = ({title, children}) => {
                 bootstrap.fixedTop,
                 {[style.shrunk]: shrunk},
             )}
+            ref={setHeightRef}
         >
             <div className={bootstrap.container}>
                 <a href="#top" className={classnames(style.brand, bootstrap.navbarBrand)}>{title}</a>
@@ -50,9 +53,9 @@ const Navbar = ({title, children}) => {
                     )}
                 >
                     <ul className={classnames(bootstrap.navbarNav, bootstrap.mlAuto)}>
-                        <ShrinkContextProvider value={shrunk}>
+                        <NavbarContextProvider shrunk={shrunk} height={height}>
                             {children}
-                        </ShrinkContextProvider>
+                        </NavbarContextProvider>
                     </ul>
                 </div>
             </div>
