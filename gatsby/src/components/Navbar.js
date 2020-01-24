@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './Navbar.module.scss';
@@ -23,8 +25,9 @@ const Navbar = ({title, children}) => {
                     type="button"
                     onClick={() => setMenuVisible((visible) => !visible)}
                     className={classnames(style.toggler, bootstrap.navbarToggler, bootstrap.navbarTogglerRight)}
+                    aria-label="Menu"
                 >
-                    Menu <i className="fas fa-bars"></i>
+                    <FontAwesomeIcon icon={faBars} />
                 </button>
                 <div
                     className={classnames(
