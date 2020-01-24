@@ -1,10 +1,11 @@
-@import "../bootstrap.module";
+@import "../variables";
+@import "../media";
 
 .main {
     min-height: 56px;
     background-color: $black;
 
-    @media(min-width: map-get($grid-breakpoints, 'lg')) {
+    @include min-lg {
         padding-top: 0;
         padding-bottom: 0;
         border-bottom: none;
@@ -18,7 +19,7 @@
     font-weight: 700;
     padding: .9rem 0;
 
-    @media(min-width: map-get($grid-breakpoints, 'lg')) {
+    @include min-lg {
         padding: .5rem 0;
         color: fade-out($white, .3);
     }
