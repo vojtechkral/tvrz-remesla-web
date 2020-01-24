@@ -1,0 +1,36 @@
+@import "../bootstrap.module";
+
+.main {
+    min-height: 56px;
+    background-color: $black;
+
+    @media(min-width: map-get($grid-breakpoints, 'lg')) {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+}
+
+.brand {
+    color: $white;
+    font-weight: 700;
+    padding: .9rem 0;
+
+    @media(min-width: map-get($grid-breakpoints, 'lg')) {
+        padding: .5rem 0;
+        color: fade-out($white, .3);
+    }
+}
+
+.toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: $primary;
+    border: 1px solid $primary;
+
+    &:focus {
+      outline: none;
+    }
+}

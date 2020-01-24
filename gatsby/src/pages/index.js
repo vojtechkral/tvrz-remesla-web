@@ -1,13 +1,19 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
 import SEO from "../components/seo"
-import {Section} from '../components';
+import {Section, Navbar, NavItem} from '../components';
 import {Footer, Masthead} from '../containers';
+
 import './style.scss';
 
 export default () => {
-    const infoBg = useStaticQuery(graphql`
+    const {background, site} = useStaticQuery(graphql`
         query {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
             background: file(relativePath: {eq: "bg-info.jpg"}) {
                 childImageSharp {
                     fluid(quality: 90, maxWidth: 1920) {
@@ -20,6 +26,9 @@ export default () => {
     return (
         <>
             <SEO lang="cs" />
+            <Navbar title={site.siteMetadata.title}>
+                <NavItem>O akci</NavItem>
+            </Navbar>
             <Masthead />
             <Section>
                 <h2>O akci</h2>
@@ -46,7 +55,7 @@ export default () => {
                     Jenom pozor na praktičnost &ndash; počítej s&nbsp;tím, že se pohybuješ v&nbsp;prostředí
                     ohně, dřeva, uhlí, hlíny, slámy, &hellip;</p>
             </Section>
-            <Section bgImage={infoBg.background.childImageSharp.fluid}>
+            <Section bgImage={background.childImageSharp.fluid}>
                 <h2>Informace</h2>
             </Section>
             <Footer />
