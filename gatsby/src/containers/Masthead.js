@@ -34,7 +34,7 @@ export default () => {
 
     return (
         <BackgroundImage
-            tag="header"
+            Tag="header"
             fluid={[style.gradient, background.childImageSharp.fluid]}
             className={style.main}
         >

@@ -27,10 +27,11 @@ export default () => {
         <>
             <SEO lang="cs" />
             <Navbar title={site.siteMetadata.title}>
-                <NavItem>O akci</NavItem>
+                <NavItem section="about">O akci</NavItem>
+                <NavItem section="info">Informace</NavItem>
             </Navbar>
             <Masthead />
-            <Section>
+            <Section name="about">
                 <h2>O akci</h2>
                 <p>Řemesla na Tvrzi rosické je prázdninový workshop tradičních řemesel,
                     který tě po tři odpoledne od 21. do 23.&nbsp;srpna a po celý den v&nbsp;sobotu 24.&nbsp;srpna zároveň přenese
@@ -55,7 +56,10 @@ export default () => {
                     Jenom pozor na praktičnost &ndash; počítej s&nbsp;tím, že se pohybuješ v&nbsp;prostředí
                     ohně, dřeva, uhlí, hlíny, slámy, &hellip;</p>
             </Section>
-            <Section bgImage={background.childImageSharp.fluid}>
+            <Section
+                name="info"
+                bgImage={background.childImageSharp.fluid}
+            >
                 <h2>Informace</h2>
             </Section>
             <Footer />

@@ -19,14 +19,25 @@
 
     @include min-lg {
         transition: none;
-        padding: 2rem 1.5rem;
+        //padding: 2rem 1.5rem;
         color: fade-out($white, .3);
 
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent; //shrink
+
         &:hover {
-          color: fade-out($white, .1);
+          //color: fade-out($white, .1);
+          color: $primary;
         }
         &:active {
-          color: white;
+          //color: white;
+          color: darken($primary, 15%);
         }
     }
+}
+
+.active {
+    color: $primary;
+    outline: none;
+    border-bottom: 0.25rem solid $primary;
 }

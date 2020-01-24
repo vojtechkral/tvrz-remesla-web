@@ -6,7 +6,7 @@ import styles from './Section.module.scss';
 
 import BackgroundImage from 'gatsby-background-image';
 
-const Section = ({children, bgImage}) => {
+const Section = ({name, children, bgImage}) => {
     const content = (
         <div className={bootstrap.container}>
             {children}
@@ -16,7 +16,7 @@ const Section = ({children, bgImage}) => {
     if (bgImage) {
         return (
             <BackgroundImage
-                tag="section"
+                Tag="section"
                 fluid={[styles.gradient, bgImage]}
                 className={styles.main}
             >
@@ -33,8 +33,9 @@ const Section = ({children, bgImage}) => {
 };
 
 Section.propTypes = {
+    name: PropTypes.string.isRequired,
     children: PropTypes.node,
-    bgImage: PropTypes.func,
+    bgImage: PropTypes.object,
 };
 
 export default Section;
