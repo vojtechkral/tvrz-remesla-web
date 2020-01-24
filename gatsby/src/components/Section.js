@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import {useScrollElement} from './scroller';
+import {Element} from 'react-scroll';
 
 import bootstrap from '../bootstrap.module.scss';
 import styles from './Section.module.scss';
@@ -9,15 +8,14 @@ import styles from './Section.module.scss';
 import BackgroundImage from 'gatsby-background-image';
 
 const Section = ({name, children, bgImage}) => {
-    const scrollRef = useScrollElement(name);
 
     const content = (
-        <div
+        <Element
             className={bootstrap.container}
-            ref={scrollRef}
+            name={name}
         >
             {children}
-        </div>
+        </Element>
     );
 
     if (bgImage) {

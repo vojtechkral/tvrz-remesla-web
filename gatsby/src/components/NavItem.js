@@ -1,27 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
+import {Link} from 'react-scroll';
 
-import {scrollToElement} from './scroller';
+import {useIsShrunk} from './shrinkContext';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './NavItem.module.scss';
 
 const NavItem = ({target, children}) => {
-    const onClick = (event) => {
-        event.preventDefault();
-        scrollToElement(target);
-    }
-
+    const shrunk = useIsShrunk();
     return (
         <li className={classnames(bootstrap.navItem, style.main)}>
-            <a
-                className={classnames(bootstrap.navLink, style.link)}
+            <Link
+                spy
+                hashSpy
+                smooth
+                className={classnames(
+                    bootstrap.navLink,
+                    style.link,
+                    {[style.shrunk]: shrunk}
+                )}
                 href={`#${target}`}
-                onClick={onClick}
+                to={target}
+                activeClass={style.active}
             >
                 {children}
-            </a>
+            </Link>
         </li>
     );
 };

@@ -4,6 +4,8 @@ import classnames from 'classnames';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 
+import {ShrinkContextProvider} from './shrinkContext';
+
 import bootstrap from '../bootstrap.module.scss';
 import style from './Navbar.module.scss';
 
@@ -11,14 +13,14 @@ const isScrolled = () => window.scrollY > 50;
 
 const Navbar = ({title, children}) => {
     const [menuVisible, setMenuVisible] = useState(false);
-    const [scrolled, setScrolled] = useState(isScrolled());
+    const [shrunk, setShrunk] = useState(!isScrolled());
     useEffect(() => {
         const onScroll = () => {
-            setScrolled(isScrolled());
+            setShrunk(!isScrolled());
         };
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
-    }, [setScrolled]);
+    }, [setShrunk]);
 
     return (
         <nav
@@ -27,7 +29,7 @@ const Navbar = ({title, children}) => {
                 bootstrap.navbar,
                 bootstrap.navbarExpandLg,
                 bootstrap.fixedTop,
-                {[style.scrolled]: scrolled},
+                {[style.shrunk]: shrunk},
             )}
         >
             <div className={bootstrap.container}>
@@ -48,7 +50,9 @@ const Navbar = ({title, children}) => {
                     )}
                 >
                     <ul className={classnames(bootstrap.navbarNav, bootstrap.mlAuto)}>
-                        {children}
+                        <ShrinkContextProvider value={shrunk}>
+                            {children}
+                        </ShrinkContextProvider>
                     </ul>
                 </div>
             </div>
