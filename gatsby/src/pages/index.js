@@ -3,6 +3,7 @@ import {graphql, useStaticQuery} from 'gatsby';
 import SEO from "../components/seo"
 import {Section, Navbar, NavItem, FaqSection, TwoColumn} from '../components';
 import {Footer, Masthead, Contact} from '../containers';
+import Register from '../register';
 
 import './style.scss';
 
@@ -147,6 +148,7 @@ export default () => {
                 <p>Platbu od tebe budeme chtít do týdne od té doby, co ti pošleme platební informace. Do té doby
                     máš rezervované vybrané bloky řemesel, potom tvou přihlášku zrušíme, aby se mohli přihlásit ostatní.</p>
                 <p>Osobní údaje, které nám poskytneš, použijeme pouze pro účely komunikace spojené s&nbsp;akcí.</p>
+                <Register />
             </Section>
             <Section name="contact">
                 <Contact />

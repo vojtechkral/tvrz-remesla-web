@@ -1,0 +1,4 @@
+// FIXME
+export default function* () {
+
+}
