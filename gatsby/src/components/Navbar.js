@@ -10,7 +10,7 @@ import {NavbarContextProvider} from './navbarContext';
 import bootstrap from '../bootstrap.module.scss';
 import style from './Navbar.module.scss';
 
-const isScrolled = () => window.scrollY > 50;
+const isScrolled = () => (typeof window !== 'undefined') && window.scrollY > 50;
 
 const Navbar = ({title, children}) => {
     const [menuVisible, setMenuVisible] = useState(false);
