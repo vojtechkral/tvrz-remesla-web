@@ -5,6 +5,8 @@ module.exports = {
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: 'Tvrz',
     year: 2020,
+    email: 'tvrz@tvrz.net',
+    fbEventId: '846604542338267',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

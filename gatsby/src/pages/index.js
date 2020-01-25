@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
 import SEO from "../components/seo"
 import {Section, Navbar, NavItem, FaqSection, TwoColumn} from '../components';
-import {Footer, Masthead} from '../containers';
+import {Footer, Masthead, Contact} from '../containers';
 
 import './style.scss';
 
@@ -29,6 +29,9 @@ export default () => {
             <Navbar title={site.siteMetadata.title}>
                 <NavItem target="about">O akci</NavItem>
                 <NavItem target="info">Informace</NavItem>
+                <NavItem target="crafts">Řemesla</NavItem>
+                <NavItem target="register">Přihláška</NavItem>
+                <NavItem target="contact">Kontakt</NavItem>
             </Navbar>
             <Masthead />
             <Section name="about">
@@ -132,6 +135,21 @@ export default () => {
                         <p>Spí se na slámě nebo na podlaze, budeš potřebovat vlastní spacák a karimatku.</p>
                     </FaqSection>
                 </TwoColumn>
+            </Section>
+            <Section name="crafts">
+            </Section>
+            <Section name="register">
+                <h2>Přihláška</h2>
+                <p>Pokud tě tato akce zaujala a chceš se zúčastnit, vyplň, prosím, následující formulář.
+                    Kromě kontaktních údajů po tobě budeme chtít bloky řemesel, které si chceš vyzkoušet.
+                    Po přihlášení ti do několika dní pošleme e-mail s&nbsp;dalšími informacemi a podrobnější dotazník,
+                    kde můžeš vyplnit, kdy se chystáš přijet, kdy odjet, a další organizační informace.</p>
+                <p>Platbu od tebe budeme chtít do týdne od té doby, co ti pošleme platební informace. Do té doby
+                    máš rezervované vybrané bloky řemesel, potom tvou přihlášku zrušíme, aby se mohli přihlásit ostatní.</p>
+                <p>Osobní údaje, které nám poskytneš, použijeme pouze pro účely komunikace spojené s&nbsp;akcí.</p>
+            </Section>
+            <Section name="contact">
+                <Contact />
             </Section>
             <Footer />
         </>
