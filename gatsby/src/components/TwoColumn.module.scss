@@ -1,0 +1,7 @@
+@import "../media";
+
+.main {
+    @include min-lg {
+        columns: 2;
+    }
+}
