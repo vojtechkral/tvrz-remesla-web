@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Řemesla na Tvrzi rosické',
     edition: 'III',
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: 'Přijeď se do Rosic naučit základy řemesla a vyrobit si svůj vlastní výrobek!',
     author: 'Tvrz',
     year: 2020,
     email: 'tvrz@tvrz.net',
