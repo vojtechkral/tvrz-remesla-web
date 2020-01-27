@@ -7,6 +7,12 @@ module.exports = {
     year: 2020,
     email: 'tvrz@tvrz.net',
     fbEventId: '846604542338267',
+    fields: {
+        name: 'entry.353496457',
+        email: 'entry.1825108357',
+        message: 'entry.241532143',
+        photoAgreement: 'entry.1097476779',
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
