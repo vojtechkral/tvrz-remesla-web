@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import createSagaMiddleware from 'redux-saga';
 import {Provider} from 'react-redux';
 
-import {ErrorAlert} from './containers';
+import {GeneralError} from './containers';
 import createStore from './createStore';
 import saga from './saga';
 import reducer from './reducer';
@@ -55,7 +55,7 @@ export default class AppProvider extends Component {
             if (process.env.NODE_ENV === 'development') {
                 throw error;
             }
-            return <ErrorAlert />;
+            return <GeneralError />;
         } else {
             return (
                 <Provider store={this.store}>{children}</Provider>

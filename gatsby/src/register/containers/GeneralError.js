@@ -1,8 +1,6 @@
 import React from 'react';
-import classnames from 'classnames';
 import {graphql, useStaticQuery} from 'gatsby';
-
-import bootstrap from '../../bootstrap.module.scss';
+import {ErrorAlert} from '../components';
 
 export default () => {
     const {site} = useStaticQuery(graphql`
@@ -16,9 +14,9 @@ export default () => {
     `);
     const {email} = site.siteMetadata;
     return (
-        <div className={classnames(bootstrap.alert, bootstrap.alertDanger)}>
+        <ErrorAlert>
             Něco se pokazilo. Zkus <a onClick={() => setTimeout(() => window.location.reload())} href="#register">obnovit</a> stránku.
             Pokud to nepomůže, napiš nám na <a href={`mailto:${email}`}>{email}</a>.
-        </div>
+        </ErrorAlert>
     );
 }
