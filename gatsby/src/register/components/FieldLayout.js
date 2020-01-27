@@ -8,7 +8,7 @@ const FieldLayout = ({input, meta, label, inputComponent: Component, ...rest}) =
     const showError = meta.invalid && meta.touched;
     return (
         <div className={bootstrap.formGroup}>
-            {label && <FieldLabel for={input.name}>{label}</FieldLabel>}
+            {label && <FieldLabel name={input.name}>{label}</FieldLabel>}
             <Component {...input} invalid={showError} {...rest} id={input.name} />
             {showError && <div className={bootstrap.invalidFeedback}>{meta.error}</div>}
         </div>

@@ -6,7 +6,7 @@ import * as R from 'ramda';
 import styles from './TextInput.module.scss';
 import bootstrap from '../../bootstrap.module.scss';
 
-const TextInput = ({onChange, ...rest}) => (
+const TextInput = ({onChange, invalid, ...rest}) => (
     <textarea
         {...rest}
         onChange={R.pipe(R.prop('target'), R.prop('value'), onChange)}
@@ -16,6 +16,11 @@ const TextInput = ({onChange, ...rest}) => (
 
 TextInput.propTypes = {
     onChange: PropTypes.func.isRequired,
+    invalid: PropTypes.bool,
 };
+
+TextInput.defaultProps = {
+    invalid: false,
+}
 
 export default TextInput;

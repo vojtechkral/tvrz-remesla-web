@@ -7,7 +7,7 @@ import bootstrap from '../../bootstrap.module.scss';
 const CheckboxLayout = ({input, label, inputComponent: Component, ...rest}) => (
     <div className={bootstrap.formCheck}>
         <Component {...input} {...rest} id={input.name} />
-        <FieldLabel className={bootstrap.formCheckLabel} for={input.name}>{label}</FieldLabel>
+        <FieldLabel className={bootstrap.formCheckLabel} name={input.name}>{label}</FieldLabel>
     </div>
 );
 
