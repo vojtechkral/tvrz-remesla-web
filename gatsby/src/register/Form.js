@@ -13,7 +13,7 @@ import {getIntervals} from './selectors';
 import {SubmitContainer, Sum} from './containers';
 import {REGISTRATION_FORM} from './constants';
 import {ErrorAlert, Center} from './components';
-//import Schedule from './Schedule';
+import Schedule from './Schedule';
 
 import bootstrap from '../bootstrap.module.scss';
 
@@ -56,7 +56,7 @@ const Form = ({handleSubmit, error}) => {
                     />
                 </div>
             </div>
-            {/*<Schedule />*/}
+            <Schedule />
             {error && <ErrorAlert>{error}</ErrorAlert>}
             <Center>
                 <Sum />

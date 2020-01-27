@@ -13,6 +13,17 @@ module.exports = {
         message: 'entry.241532143',
         photoAgreement: 'entry.1097476779',
     },
+    prices: {
+        base: 0,
+        med: 525,
+        korale: 600,
+        tkani: 350,
+        lucerna: 450,
+        karetky: 450,
+        nuz: 600,
+        pochva: 400,
+        prace: -300,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
