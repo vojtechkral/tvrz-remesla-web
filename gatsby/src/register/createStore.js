@@ -3,7 +3,7 @@ import {applyMiddleware, compose, createStore} from 'redux';
 import * as R from 'ramda';
 
 export default (reducer, sagaMiddleware) => {
-    const reduxDevTools = window.__REDUX_DEVTOOLS_EXTENSION__; // eslint-disable-line no-underscore-dangle
+    const reduxDevTools = process.env.node === 'development' && window.__REDUX_DEVTOOLS_EXTENSION__; // eslint-disable-line no-underscore-dangle
     const middlewareList = [sagaMiddleware];
 
     if (process.env.NODE_ENV === 'development') {

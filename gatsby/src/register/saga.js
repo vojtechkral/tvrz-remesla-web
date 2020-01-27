@@ -23,9 +23,11 @@ const loadFreeSlots = function* loadFreeSlots() {
 };
 
 export default function* () {
-    yield takeEvery(SUBMIT, submitForm);
-    for (;;) {
-        yield call(loadFreeSlots);
-        yield delay(5000);
+    if (typeof window !== 'undefined') {
+        yield takeEvery(SUBMIT, submitForm);
+        for (;;) {
+            yield call(loadFreeSlots);
+            yield delay(5000);
+        }
     }
 }
