@@ -15,11 +15,12 @@ const isScrolled = () => (typeof window !== 'undefined') && window.scrollY > 50;
 const Navbar = ({title, children}) => {
     const [menuVisible, setMenuVisible] = useState(false);
     const [height, setHeight] = useState(0);
-    const [shrunk, setShrunk] = useState(!isScrolled());
+    const [shrunk, setShrunk] = useState(true);
     useEffect(() => {
         const onScroll = () => {
             setShrunk(!isScrolled());
         };
+        onScroll();
         window.addEventListener('scroll', onScroll);
         return () => window.removeEventListener('scroll', onScroll);
     }, [setShrunk]);
