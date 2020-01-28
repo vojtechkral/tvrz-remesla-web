@@ -32,11 +32,12 @@ export default () => {
 
     return (
         <>
-            {crafts.edges.map(({node: {html, frontmatter: {title, images}}}) => (
+            {crafts.edges.map(({node: {html, frontmatter: {title, images}}}, i) => (
                 <Craft
                     key={title}
                     name={title}
                     images={images}
+                    alternate={i % 2 === 1}
                 >
                     <div dangerouslySetInnerHTML={{__html: html}}/>
                 </Craft>

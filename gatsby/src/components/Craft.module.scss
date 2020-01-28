@@ -12,6 +12,12 @@
     }
 }
 
+.alternate {
+    @include min-lg {
+        flex-direction: row-reverse;
+    }
+}
+
 .description {
     padding: 3em;
 
