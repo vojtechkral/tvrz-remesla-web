@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import createSagaMiddleware from 'redux-saga';
 import {Provider} from 'react-redux';
+import * as Sentry from '@sentry/browser';
 
 import {GeneralError} from './containers';
 import createStore from './createStore';
@@ -36,7 +37,7 @@ export default class AppProvider extends Component {
 
     showError = (error) => {
         console.error(error); // eslint-disable-line no-console
-        // Sentry.captureException(error); FIXME
+        Sentry.captureException(error);
         if (this.updater.isMounted(this)) {
             this.setState({error});
         } else {
