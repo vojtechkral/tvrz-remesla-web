@@ -46,7 +46,6 @@ export default () => {
                     <h1 className={style.title}>{title}</h1>
                     <h2 className={style.subtitle}>{subtitle} {site.siteMetadata.edition}</h2>
                     <ScrollLink
-                        Tag="a"
                         href="#about"
                         className={classnames(bootstrap.btn, bootstrap.btnPrimary, button.main, button.primary)}
                         to="about"
