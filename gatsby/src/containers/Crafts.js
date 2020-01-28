@@ -6,11 +6,15 @@ import {Craft} from '../components';
 export default () => {
     const {crafts} = useStaticQuery(graphql`
         query {
-            crafts: allMarkdownRemark {
+            crafts: allMarkdownRemark (
+                sort: {fields: [frontmatter___title]}
+                filter: {frontmatter: {display: {eq: true}}}
+            ) {
                 edges {
                     node {
                         frontmatter {
                             title
+                            display
                             images {
                                 childImageSharp {
                                     fluid (maxWidth: 1920) {
@@ -28,13 +32,13 @@ export default () => {
 
     return (
         <>
-            {crafts.edges.map(({node}) => (
+            {crafts.edges.map(({node: {html, frontmatter: {title, images}}}) => (
                 <Craft
-                    key={node.frontmatter.title}
-                    name={node.frontmatter.title}
-                    images={node.frontmatter.images}
+                    key={title}
+                    name={title}
+                    images={images}
                 >
-                    <div dangerouslySetInnerHTML={{__html: node.html}}/>
+                    <div dangerouslySetInnerHTML={{__html: html}}/>
                 </Craft>
             ))}
         </>

@@ -1,5 +1,6 @@
 ---
 title: "Tkaní"
+display: true
 ---
 *Utkat z lněné příze pruhy s ozdobnými vzory zvládne s hřebenem i začátečník!*
 

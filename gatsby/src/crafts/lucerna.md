@@ -1,5 +1,6 @@
 ---
 title: "Lucerna"
+display: true
 ---
 *Takhle stylové svítidlo určitě doma nemáš!*
 

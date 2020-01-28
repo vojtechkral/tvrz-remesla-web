@@ -1,5 +1,6 @@
 ---
 title: "Karetkování"
+display: true
 ---
 
 *Tkaní na karetkách je sice těžší než na hřebenu, ale ty vzory!*

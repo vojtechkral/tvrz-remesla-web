@@ -1,5 +1,6 @@
 ---
 title: "Nůž a pochva"
+display: true
 ---
 *Každý správný muž nosí nůž. Proč by ale nemohly i ženy?*
 

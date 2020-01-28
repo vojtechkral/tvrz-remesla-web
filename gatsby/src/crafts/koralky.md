@@ -1,5 +1,6 @@
 ---
 title: "Korálky"
+display: true
 ---
 
 *Navíjet sklo nad kahanem, to si jinde nevyzkoušíš!*
