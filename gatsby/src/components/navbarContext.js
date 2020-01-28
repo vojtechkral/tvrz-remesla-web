@@ -1,7 +1,7 @@
 import React, {createContext, useContext, useMemo, useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 
-const NavbarContext = createContext();
+const NavbarContext = createContext({height: 0, shrunk: true, setHeight: () => {}});
 
 export const NavbarContextProvider = ({children}) => {
     const [height, setHeight] = useState(0);
