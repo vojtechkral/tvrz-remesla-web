@@ -3,8 +3,11 @@ import classnames from 'classnames';
 import {graphql, useStaticQuery} from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
+import {ScrollLink} from '../components';
+
 import bootstrap from '../bootstrap.module.scss';
 import style from './Masthead.module.scss';
+import button from '../button.module.scss';
 
 const split = (string) => {
     const separatorIndex = string.indexOf(' ');
@@ -42,6 +45,15 @@ export default () => {
                 <div className={style.titleArea}>
                     <h1 className={style.title}>{title}</h1>
                     <h2 className={style.subtitle}>{subtitle} {site.siteMetadata.edition}</h2>
+                    <ScrollLink
+                        Tag="a"
+                        href="#about"
+                        className={classnames(bootstrap.btn, bootstrap.btnPrimary, button.main, button.primary)}
+                        to="about"
+                        smooth
+                    >
+                        Více
+                    </ScrollLink>
                 </div>
             </div>
         </BackgroundImage>
