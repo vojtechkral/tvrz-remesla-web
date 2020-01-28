@@ -11,6 +11,13 @@ export default () => {
                     node {
                         frontmatter {
                             title
+                            images {
+                                childImageSharp {
+                                    fluid (maxWidth: 1920) {
+                                        ...GatsbyImageSharpFluid_tracedSVG
+                                    }
+                                }
+                            }
                         }
                         html
                     }
@@ -25,6 +32,7 @@ export default () => {
                 <Craft
                     key={node.frontmatter.title}
                     name={node.frontmatter.title}
+                    images={node.frontmatter.images}
                 >
                     <div dangerouslySetInnerHTML={{__html: node.html}}/>
                 </Craft>
