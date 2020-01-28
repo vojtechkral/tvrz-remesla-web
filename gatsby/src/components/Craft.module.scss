@@ -1,0 +1,46 @@
+@import "../variables";
+@import "../media";
+
+.main {
+    background-color: $black;
+
+    display: flex;
+    flex-direction: column;
+
+    @include min-lg {
+        flex-direction: row;
+    }
+}
+
+.description {
+    padding: 3em;
+
+    @include min-lg {
+        width: 67%;
+    }
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+
+    @include min-md {
+        flex-direction: row;
+    }
+
+    @include min-lg {
+        width: 33%;
+        flex-direction: column;
+    }
+}
+
+.image {
+    @include min-md {
+        flex: 1 1 auto;
+    }
+}
+
+.title {
+    border-bottom: 2px solid $primary;
+    display: inline-block;
+}
