@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useCallback} from 'react';
+import React, {useState, useCallback} from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -9,8 +9,6 @@ import {useNavbarContext} from './navbarContext';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './Navbar.module.scss';
-
-const isScrolled = () => (typeof window !== 'undefined') && window.scrollY > 50;
 
 const Navbar = ({title, children}) => {
     const {setHeight, shrunk} = useNavbarContext();

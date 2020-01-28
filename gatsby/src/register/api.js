@@ -1,6 +1,5 @@
 import queryString from 'query-string';
 import * as R from 'ramda';
-import {CANCEL} from 'redux-saga';
 
 const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
 const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeXfWlgY2nektgekmEZ1Ju_J95enVR0c_lyBgEmE8rJ_vYHUw/formResponse';
