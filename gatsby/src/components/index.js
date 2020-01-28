@@ -5,3 +5,4 @@ export {default as FaqSection} from './FaqSection';
 export {default as TwoColumn} from './TwoColumn';
 export {NavbarContextProvider} from './navbarContext';
 export {default as ScrollLink} from './ScrollLink';
+export {default as Craft} from './Craft';

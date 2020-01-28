@@ -26,19 +26,19 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
+        name: 'images',
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Řemesla na Tvrzi rosické',
         short_name: 'Řemesla',
@@ -63,7 +63,15 @@ module.exports = {
         options: {
             trackingId: 'UA-139615876-1',
         },
-    }
+    },
+    {
+        resolve: 'gatsby-source-filesystem',
+        options: {
+            name: 'crafts',
+            path: `${__dirname}/src/crafts`,
+        }
+    },
+    'gatsby-transformer-remark',
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

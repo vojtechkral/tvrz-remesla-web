@@ -2,7 +2,7 @@ import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby';
 import SEO from "../components/seo"
 import {Section, Navbar, NavItem, FaqSection, TwoColumn} from '../components';
-import {Footer, Masthead, Contact} from '../containers';
+import {Footer, Masthead, Contact, Crafts} from '../containers';
 import Register from '../register';
 
 import './style.scss';
@@ -138,6 +138,7 @@ export default () => {
                 </TwoColumn>
             </Section>
             <Section name="crafts">
+                <Crafts />
             </Section>
             <Section name="register">
                 <h2>Přihláška</h2>
