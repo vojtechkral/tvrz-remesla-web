@@ -1,10 +1,22 @@
-import React, {createContext, useContext, useMemo} from 'react';
+import React, {createContext, useContext, useMemo, useEffect, useState} from 'react';
 import PropTypes from 'prop-types';
 
 const NavbarContext = createContext();
 
-export const NavbarContextProvider = ({height, shrunk, children}) => {
-    const value = useMemo(() => ({height, shrunk}), [height, shrunk]);
+export const NavbarContextProvider = ({children}) => {
+    const [height, setHeight] = useState(0);
+    const [shrunk, setShrunk] = useState(true);
+    const value = useMemo(() => ({height, shrunk, setHeight}), [height, shrunk, setHeight]);
+
+    useEffect(() => {
+        const onScroll = () => {
+            setShrunk(window.scrollY < 50);
+        };
+        onScroll();
+        window.addEventListener('scroll', onScroll, {passive: true});
+        return () => window.removeEventListener('scroll', onScroll);
+    }, [setShrunk]);
+
     return (
         <NavbarContext.Provider value={value}>
             {children}
@@ -13,8 +25,6 @@ export const NavbarContextProvider = ({height, shrunk, children}) => {
 };
 
 NavbarContextProvider.propTypes = {
-    shrunk: PropTypes.bool.isRequired,
-    height: PropTypes.number.isRequired,
     children: PropTypes.node.isRequired,
 };
 

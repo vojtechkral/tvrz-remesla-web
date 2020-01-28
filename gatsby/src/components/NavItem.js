@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import {Link} from 'react-scroll';
 
+import ScrollLink from './ScrollLink';
 import {useNavbarContext} from './navbarContext';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './NavItem.module.scss';
 
 const NavItem = ({target, children}) => {
-    const {shrunk, height} = useNavbarContext();
+    const {shrunk} = useNavbarContext();
 
     return (
         <li className={classnames(bootstrap.navItem, style.main)}>
-            <Link
+            <ScrollLink
                 spy
                 hashSpy
                 smooth
@@ -25,10 +25,9 @@ const NavItem = ({target, children}) => {
                 href={`#${target}`}
                 to={target}
                 activeClass={style.active}
-                offset={-height}
             >
                 {children}
-            </Link>
+            </ScrollLink>
         </li>
     );
 };

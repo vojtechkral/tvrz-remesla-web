@@ -5,7 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import {animateScroll} from 'react-scroll';
 
-import {NavbarContextProvider} from './navbarContext';
+import {useNavbarContext} from './navbarContext';
 
 import bootstrap from '../bootstrap.module.scss';
 import style from './Navbar.module.scss';
@@ -13,17 +13,8 @@ import style from './Navbar.module.scss';
 const isScrolled = () => (typeof window !== 'undefined') && window.scrollY > 50;
 
 const Navbar = ({title, children}) => {
+    const {setHeight, shrunk} = useNavbarContext();
     const [menuVisible, setMenuVisible] = useState(false);
-    const [height, setHeight] = useState(0);
-    const [shrunk, setShrunk] = useState(true);
-    useEffect(() => {
-        const onScroll = () => {
-            setShrunk(!isScrolled());
-        };
-        onScroll();
-        window.addEventListener('scroll', onScroll);
-        return () => window.removeEventListener('scroll', onScroll);
-    }, [setShrunk]);
     const setHeightRef = useCallback((element) => setHeight(element ? element.offsetHeight : 0), [setHeight]);
     const onBrandClick = (event) => {
         event.preventDefault();
@@ -65,9 +56,7 @@ const Navbar = ({title, children}) => {
                     )}
                 >
                     <ul className={classnames(bootstrap.navbarNav, bootstrap.mlAuto)}>
-                        <NavbarContextProvider shrunk={shrunk} height={height}>
-                            {children}
-                        </NavbarContextProvider>
+                        {children}
                     </ul>
                 </div>
             </div>
