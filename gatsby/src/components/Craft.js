@@ -5,12 +5,15 @@ import Img from 'gatsby-image';
 import Carousel, {ModalGateway, Modal} from 'react-images';
 
 import style from './Craft.module.scss';
+import bootstrap from '../bootstrap.module.scss';
 
 const ViewComponent = ({data}) => (
-    <Img
-        fluid={data.fluid}
-    />
-)
+    <div className={bootstrap.container}>
+        <Img
+            fluid={data.fluid}
+        />
+    </div>
+);
 
 const Craft = ({name, children, images, alternate, showcase}) => {
     const [galleryIndex, setGalleryIndex] = useState(null);
