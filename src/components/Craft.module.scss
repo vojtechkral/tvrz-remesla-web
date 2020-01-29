@@ -1,0 +1,73 @@
+@import "../variables";
+@import "../media";
+
+.main {
+    background-color: $black;
+
+    display: flex;
+    flex-direction: column;
+
+    @include min-lg {
+        flex-direction: row;
+    }
+}
+
+.alternate {
+    @include min-lg {
+        flex-direction: row-reverse;
+    }
+}
+
+.description {
+    padding: 3em;
+
+    @include min-lg {
+        width: 67%;
+    }
+}
+
+.images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    @include min-md {
+        flex-direction: row;
+    }
+
+    @include min-lg {
+        width: 33%;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+.image {
+    display: none;
+    &:first-child {
+        display: block;
+    }
+
+    @include min-md {
+        display: block;
+        flex: 1 1 auto;
+    }
+
+    @include min-lg {
+        flex: initial;
+        height: initial;
+    }
+
+    cursor: pointer;
+}
+
+.imageWrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    border-bottom: 2px solid $primary;
+    display: inline-block;
+}

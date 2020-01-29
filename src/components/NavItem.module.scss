@@ -1,0 +1,49 @@
+@import "../variables";
+@import "../media";
+
+.main {
+    &:hover {
+        outline: none;
+        background-color: transparent;
+    }
+    &:active, &:focus {
+      outline: none;
+      background-color: transparent;
+    }
+}
+
+.link {
+    &:hover {
+        color: fade($white, 80%);
+    }
+
+    @include min-lg {
+        transition: none;
+        color: fade-out($white, .3);
+
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+
+        &:hover {
+            color: $primary;
+        }
+        &:active {
+          color: darken($primary, 15%);
+        }
+    }
+}
+
+@include min-lg {
+    .shrunk:hover {
+        color: fade-out($white, .1);
+    }
+    .shrunk:active {
+        color: white;
+    }
+}
+
+.active {
+    color: $primary;
+    outline: none;
+    border-bottom: 0.25rem solid $primary;
+}

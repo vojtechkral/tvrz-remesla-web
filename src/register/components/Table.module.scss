@@ -1,0 +1,45 @@
+@import "./variables";
+@import "../../variables";
+
+$border-color: $black;
+$background-color: $white;
+
+.positioner {
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    color: $black;
+    background-color: $background-color;
+    padding: 5px;
+    border-radius: 5px;
+
+    overflow: auto;
+    display: flex;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main {
+    border: 1px solid $border-color;
+    background: repeating-linear-gradient(90deg,
+        transparent,
+        transparent $cell-width - 1,
+        $border-color $cell-width - 1,
+        $border-color $cell-width
+    );
+}
+
+.disabled {
+    background-color: $gray-300;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid $border-color;
+}
