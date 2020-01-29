@@ -7,7 +7,7 @@ export default () => {
     const {crafts} = useStaticQuery(graphql`
         query {
             crafts: allMarkdownRemark (
-                sort: {fields: [frontmatter___title]}
+                sort: {fields: [frontmatter___order]}
                 filter: {frontmatter: {display: {eq: true}}}
             ) {
                 edges {
