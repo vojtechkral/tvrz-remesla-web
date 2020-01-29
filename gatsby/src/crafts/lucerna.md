@@ -2,7 +2,8 @@
 title: "Lucerna"
 display: true
 showcase: 1
-images: ["127-lucerna.jpg"]
+order: 5
+images: ["127-lucerna.jpg", "126-lucerna.jpg", "105-lucerna.jpg", "106-lucerna.jpg"]
 ---
 *Takhle stylové svítidlo určitě doma nemáš!*
 

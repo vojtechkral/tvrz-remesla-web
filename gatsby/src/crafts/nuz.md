@@ -1,8 +1,9 @@
 ---
 title: "Nůž a pochva"
 display: true
-showcase: 1
-images: ["139-nuz.jpg"]
+showcase: 2
+order: 6
+images: ["139-nuz.jpg", "189-nuz.jpg", "195-nuz.jpg", "160-nuz.jpg", "192-nuz.jpg", "141-nuz.jpg", "173-nuz.jpg"]
 ---
 *Každý správný muž nosí nůž. Proč by ale nemohly i ženy?*
 

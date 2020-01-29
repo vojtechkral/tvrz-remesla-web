@@ -1,8 +1,9 @@
 ---
 title: "Karetkování"
 display: true
-showcase: 1
-images: ["karetky-1.jpg"]
+showcase: 2
+order: 4
+images: ["karetky-1.jpg", "karetky-2.jpg"]
 ---
 
 *Tkaní na karetkách je sice těžší než na hřebenu, ale ty vzory!*

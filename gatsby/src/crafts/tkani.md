@@ -1,8 +1,9 @@
 ---
 title: "Tkaní"
 display: true
-showcase: 1
-images: ["112-stuha.jpg"]
+showcase: 2
+order: 3
+images: ["112-stuha.jpg", "113-stuha.jpg", "150-stuha.jpg", "116-stuha.jpg", "117-stuha.jpg"]
 ---
 *Utkat z lněné příze pruhy s ozdobnými vzory zvládne s hřebenem i začátečník!*
 

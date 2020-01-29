@@ -1,8 +1,9 @@
 ---
 title: "Korálky"
 display: true
-shodwcase: 1
-images: ["110-koralky.jpg"]
+order: 2
+showcase: 2
+images: ["110-koralky.jpg", "198-koralky.jpg", "109-koralky.jpg", "111-koralky.jpg", "199-koralky.jpg", "201-koralky.jpg", "205-koralky.jpg"]
 ---
 
 *Navíjet sklo nad kahanem, to si jinde nevyzkoušíš!*

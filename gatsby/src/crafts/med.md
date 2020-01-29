@@ -1,6 +1,7 @@
 ---
 title: "Měděné výrobky"
 display: true
+order: 1
 showcase: 3
 images: ["214-med.jpg", "104-med.jpg", "165-med.jpg", "212-med.jpg", "169-med.jpg", "176-med.jpg", "216-med.jpg", "181-med.jpg", "204-med.jpg"]
 ---
