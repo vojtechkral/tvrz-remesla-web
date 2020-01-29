@@ -1,10 +1,7 @@
-# Redux Starter Pack
-My personal starter pack for quick-starting redux applications.
-## Features
-* webpack-dev-server with hot reload
-* react + redux
-* redux-freeze + ramda
-* redux-saga
-* sass
-* mocha + chai (should)
-* eslint (customized airbnb)
+Řemesla na Tvrzi Rosické
+========================
+Pro další ročník je třeba upravit:
+
+* Metadata v `gatsby-config.js`.
+* Sloty řemesel v `src/register/Schedule.js`.
+* Datumy v `src/pages/index.js` (pozor na storno poplatky!).
