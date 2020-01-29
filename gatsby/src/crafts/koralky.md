@@ -1,6 +1,7 @@
 ---
 title: "Korálky"
 display: true
+images: ["110-koralky.jpg"]
 ---
 
 *Navíjet sklo nad kahanem, to si jinde nevyzkoušíš!*

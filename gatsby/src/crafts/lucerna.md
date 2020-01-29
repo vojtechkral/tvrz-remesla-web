@@ -1,6 +1,7 @@
 ---
 title: "Lucerna"
 display: true
+images: ["127-lucerna.jpg"]
 ---
 *Takhle stylové svítidlo určitě doma nemáš!*
 
