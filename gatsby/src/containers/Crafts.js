@@ -19,7 +19,7 @@ export default () => {
                             images {
                                 childImageSharp {
                                     fluid (maxWidth: 1920) {
-                                        ...GatsbyImageSharpFluid_tracedSVG
+                                        ...GatsbyImageSharpFluid
                                     }
                                 }
                             }
