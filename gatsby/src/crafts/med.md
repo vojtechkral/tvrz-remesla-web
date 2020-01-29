@@ -1,7 +1,8 @@
 ---
 title: "Měděné výrobky"
-images: ["104-med.jpg", "165-med.jpg"]
 display: true
+showcase: 3
+images: ["214-med.jpg", "104-med.jpg", "165-med.jpg", "212-med.jpg", "169-med.jpg", "176-med.jpg", "216-med.jpg", "181-med.jpg", "204-med.jpg"]
 ---
 *Člověk by nevěřil, kolik toho jde udělat s měděným drátem a kladívkem!*
 

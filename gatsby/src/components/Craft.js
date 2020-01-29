@@ -12,7 +12,7 @@ const ViewComponent = ({data}) => (
     />
 )
 
-const Craft = ({name, children, images, alternate}) => {
+const Craft = ({name, children, images, alternate, showcase}) => {
     const [galleryIndex, setGalleryIndex] = useState(null);
     return (
         <div className={classnames(style.main, {[style.alternate]: alternate})}>
@@ -21,12 +21,14 @@ const Craft = ({name, children, images, alternate}) => {
                 {children}
             </div>
             <div className={style.images}>
-                {images.map(({childImageSharp}, i) => (
-                    <div onClick={() => setGalleryIndex(i)}>
+                {images.slice(0, showcase).map(({childImageSharp}, i) => (
+                    <div
+                        key={childImageSharp.fluid.src}
+                        onClick={() => setGalleryIndex(i)}
+                        className={style.image}
+                    >
                         <Img
-                            key={childImageSharp.name}
                             fluid={childImageSharp.fluid}
-                            className={style.image}
                         />
                     </div>
                 ))}
@@ -50,10 +52,12 @@ Craft.propTypes = {
     name: PropTypes.string.isRequired,
     alternate: PropTypes.bool,
     children: PropTypes.node,
+    showcase: PropTypes.number,
 };
 
 Craft.defaultProps = {
     alternate: false,
+    showcase: 1,
 }
 
 export default Craft;

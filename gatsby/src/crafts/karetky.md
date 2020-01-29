@@ -1,6 +1,7 @@
 ---
 title: "Karetkování"
 display: true
+showcase: 1
 images: ["karetky-1.jpg"]
 ---
 

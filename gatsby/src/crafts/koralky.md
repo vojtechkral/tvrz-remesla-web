@@ -1,6 +1,7 @@
 ---
 title: "Korálky"
 display: true
+shodwcase: 1
 images: ["110-koralky.jpg"]
 ---
 

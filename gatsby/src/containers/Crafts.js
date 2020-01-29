@@ -15,6 +15,7 @@ export default () => {
                         frontmatter {
                             title
                             display
+                            showcase
                             images {
                                 childImageSharp {
                                     fluid (maxWidth: 1920) {
@@ -32,11 +33,12 @@ export default () => {
 
     return (
         <>
-            {crafts.edges.map(({node: {html, frontmatter: {title, images}}}, i) => (
+            {crafts.edges.map(({node: {html, frontmatter: {title, images, showcase}}}, i) => (
                 <Craft
                     key={title}
                     name={title}
                     images={images}
+                    showcase={showcase}
                     alternate={i % 2 === 1}
                 >
                     <div dangerouslySetInnerHTML={{__html: html}}/>

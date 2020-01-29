@@ -1,6 +1,7 @@
 ---
 title: "Nůž a pochva"
 display: true
+showcase: 1
 images: ["139-nuz.jpg"]
 ---
 *Každý správný muž nosí nůž. Proč by ale nemohly i ženy?*

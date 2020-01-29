@@ -1,6 +1,7 @@
 ---
 title: "Doprovodný program"
 display: true
+showcase: 1
 images: ["123-dp.jpg"]
 ---
 Kromě řemesel bude po celý den probíhat další program. Pokud zrovna nebudeš mít co dělat
