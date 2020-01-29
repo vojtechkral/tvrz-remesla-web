@@ -29,6 +29,7 @@ const Craft = ({name, children, images, alternate, showcase}) => {
                     >
                         <Img
                             fluid={childImageSharp.fluid}
+                            className={style.imageWrapper}
                         />
                     </div>
                 ))}
