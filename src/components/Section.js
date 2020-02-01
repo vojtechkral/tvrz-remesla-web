@@ -24,7 +24,7 @@ const Section = ({name, children, bgImage}) => {
                 Tag="section"
                 fluid={[styles.gradient, bgImage]}
                 className={styles.main}
-                id={`#${name}`}
+                id={name}
             >
                 {content}
             </BackgroundImage>
@@ -32,7 +32,7 @@ const Section = ({name, children, bgImage}) => {
     } else {
         return (
             <section
-                id={`#${name}`}
+                id={name}
                 className={styles.main}
             >
                 {content}
