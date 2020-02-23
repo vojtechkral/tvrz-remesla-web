@@ -6,3 +6,8 @@ body {
     background-color: $gray-900;
     color: $gray-400;
 }
+
+p {
+    text-align: justify;
+    hyphens: manual;
+}
