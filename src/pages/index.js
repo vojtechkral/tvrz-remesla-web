@@ -6,6 +6,7 @@ import {Footer, Masthead, Contact, Crafts, Info} from '../containers';
 import Register from '../register';
 
 import './style.scss';
+import {renderMarkdown} from '../utils';
 
 export default () => {
     const {background, site, about, register} = useStaticQuery(graphql`
@@ -24,12 +25,12 @@ export default () => {
             }
             about: file(relativePath: {eq: "about.md"}) {
                 childMarkdownRemark {
-                    html
+                    htmlAst
                 }
             }
             register: file(relativePath: {eq: "register.md"}) {
                 childMarkdownRemark {
-                    html
+                    htmlAst
                 }
             }
         }
@@ -46,7 +47,7 @@ export default () => {
             </Navbar>
             <Masthead />
             <Section name="about">
-                <div dangerouslySetInnerHTML={{__html: about.childMarkdownRemark.html}} />
+                {renderMarkdown(about.childMarkdownRemark.htmlAst)}
             </Section>
             <Section
                 name="info"
@@ -62,7 +63,7 @@ export default () => {
             </Section>
             <Section name="register">
                 <h2>Přihláška</h2>
-                <div dangerouslySetInnerHTML={{__html: register.childMarkdownRemark.html}} />
+                {renderMarkdown(register.childMarkdownRemark.htmlAst)}
                 <Register />
             </Section>
             <Section name="contact">

@@ -2,6 +2,7 @@ import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby';
 
 import {Craft} from '../components';
+import {renderMarkdown} from '../utils';
 
 export default () => {
     const {crafts} = useStaticQuery(graphql`
@@ -27,7 +28,7 @@ export default () => {
                                 }
                             }
                         }
-                        html
+                        htmlAst
                     }
                 }
             }
@@ -36,7 +37,7 @@ export default () => {
 
     return (
         <>
-            {crafts.edges.map(({node: {html, frontmatter: {title, images, showcase}}}, i) => (
+            {crafts.edges.map(({node: {htmlAst, frontmatter: {title, images, showcase}}}, i) => (
                 <Craft
                     key={title}
                     name={title}
@@ -44,7 +45,7 @@ export default () => {
                     showcase={showcase}
                     alternate={i % 2 === 1}
                 >
-                    <div dangerouslySetInnerHTML={{__html: html}}/>
+                    {renderMarkdown(htmlAst)}
                 </Craft>
             ))}
         </>
