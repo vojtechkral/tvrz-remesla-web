@@ -8,7 +8,10 @@ export default () => {
         query {
             crafts: allMarkdownRemark (
                 sort: {fields: [frontmatter___order]}
-                filter: {frontmatter: {display: {eq: true}}}
+                filter: {
+                    frontmatter: {display: {eq: true}}
+                    fileAbsolutePath: {glob: "**/crafts/*.md"}
+                }
             ) {
                 edges {
                     node {
