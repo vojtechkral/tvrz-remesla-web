@@ -13,8 +13,8 @@ Rukojeť budeš mít dřevěnou (dle možností bukovou, jasanovou nebo březovo
 Po obrobení do požadovaného tvaru ji napustíš impregnací a vyleštíš.
 
 Pochvu si vyrobíš koženou, volitelně s dřevěnou vložkou a se šitím buď vzadu (středověký nebo také finský styl)
-nebo na boku. Výroba pochvy je v nabídce uvedena jako samostatný blok, pokud máš zájem nezapomeň si jej prihlásit.
-Pro výrobu pochvy je potřeba mít hotový nůž &ndash; buď ten, co si vyrobíš nebo si můzes i donést svůj, jiný.
+nebo na boku. Výroba pochvy je v nabídce uvedena jako samostatný blok, pokud máš zájem nezapomeň si jej přihlásit.
+Pro výrobu pochvy je potřeba mít hotový nůž &ndash; buď ten, co si vyrobíš nebo si můžes i donést svůj, jiný.
 
 Prakticky všechny práce se provádí ručními nástroji (nůž, pilka, pilník, smirkový papír, &hellip;).
 

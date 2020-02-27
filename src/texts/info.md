@@ -1,5 +1,5 @@
 # Kdy?
-Sobota 30.&nbsp;5. a neděle 31.&nbsp;5.
+Sobota 30.&nbsp;5. a neděle 31.&nbsp;5. 2020.
 
 V&nbsp;základu počítáme, že se zdržíš na svůj vybraný blok řemesel,
 můžeš ale přijet na libovolnou část akce. Pokud chceš přijet dříve
@@ -20,9 +20,9 @@ zahrnutý materiál, jídlo a náklady na organizaci akce. Taky z&nbsp;ní
 budeme pokrývat další výdaje jako například dopravu a stravování
 organizátorů.
 
-Kromě toho máš možnost pomoct nám s&nbsp;pracemi v&nbsp;Příkopu a tím
+<!-- Kromě toho máš možnost pomoct nám s&nbsp;pracemi v&nbsp;Příkopu a tím
 si "odpracovat" část ceny akce. Bloky brigád najdeš v&nbsp;přihlášce
-a za každý ti strhneme 300 Kč z&nbsp;ceny.
+a za každý ti strhneme 300 Kč z&nbsp;ceny. -->
 
 Na akci nic nevyděláváme, veškerý případný zisk půjde do údržby
 a zvelebování středověké vesničky v&nbsp;Příkopu.
@@ -40,7 +40,7 @@ Naše černá kuchyně bude vařit po celou dobu akce. Kromě krátké pauzy na 
 v&nbsp;řemeslných blocích nejsou přestavky, ale pokud budeš mít hlad,
 přestávku si udělat můžeš, v&nbsp;kuchyni se vždycky něco najde. V&nbsp;ceně
 je svačina a večeře, v&nbsp;sobotu i oběd (to samé, pokud budeš u&nbsp;nás
-dopoledne na brigádě.
+dopoledne na brigádě).
 
 Po přihlášení ti pošleme dotazník, kam můžeš napsat, jestli máš potravinové
 alergie nebo zvláštní požadavky (jsi vegetarián, &hellip;).
