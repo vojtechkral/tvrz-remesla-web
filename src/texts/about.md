@@ -1,7 +1,6 @@
 ## O akci
 Řemesla na Tvrzi rosické je prázdninový workshop tradičních řemesel,
-který tě po tři odpoledne od 21. do 23.&nbsp;srpna a po celý den v&nbsp;sobotu
-24.&nbsp;srpna zároveň přenese do 14.&nbsp;století na panství rosické.
+který tě v sobotu 30. a neděli 31.&nbsp;května přenese do 14.&nbsp;století na panství rosické.
 
 Zatímco si pan purkrabí bude vyřizovat účty s&nbsp;nezbedným písařem, ty se staneš
 řemeslným učedníkem. Pod vedením zkušeného mistra si vyrobíš doplněk ke svému

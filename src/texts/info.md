@@ -1,5 +1,5 @@
 # Kdy?
-Středa 21.&nbsp;8. až sobota 24.&nbsp;8.
+Sobota 30.&nbsp;5. a neděle 31.&nbsp;5.
 
 V&nbsp;základu počítáme, že se zdržíš na svůj vybraný blok řemesel,
 můžeš ale přijet na libovolnou část akce. Pokud chceš přijet dříve
@@ -30,8 +30,8 @@ Organizátoři a mistři pracují bez nároku na odměnu.
 
 
 # Storno poplatky
-Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 21.&nbsp;7.,
-50&nbsp;% do 11.&nbsp;8. a 90&nbsp;% do 20.&nbsp;8. Ode dne započetí
+Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 30.&nbsp;4.,
+50&nbsp;% do 20.&nbsp;5. a 90&nbsp;% do 29.&nbsp;5. Ode dne započetí
 akce peníze nevracíme. V&nbsp;případě zrušení akce ze strany
 organizátorů vracíme 100&nbsp;% uhrazené částky.
 
@@ -61,7 +61,6 @@ kahany, kuchyně, &hellip;) a organizátoři nebudou mít čas dávat na děti p
 Předpokládáme proto, že na ně budeš dohlížet. Pokud chceš vzít někoho jako
 dozor (partnera/partnerku, babičku, &hellip;), nemusí se přihlašovat zvlášť,
 jen nám to napiš a domluvíme se.
-
 
 # Berete náhradníky?
 Jsou všechna místa na řemeslném bloku, kterého se chceš zúčastnit, obsazená?
