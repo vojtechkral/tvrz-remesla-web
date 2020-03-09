@@ -2,7 +2,7 @@ import queryString from 'query-string';
 import * as R from 'ramda';
 
 const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
-const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSeXfWlgY2nektgekmEZ1Ju_J95enVR0c_lyBgEmE8rJ_vYHUw/formResponse';
+const FORM_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdy6NncAF5qWRRMldTEICkIW45ZD_HCEna9s3bzHZ1HHg6xpA/formResponse';
 
 export const submit = (values) => fetch(`${CORS_URL}${FORM_URL}`, {
     method: 'POST',
@@ -13,7 +13,7 @@ export const submit = (values) => fetch(`${CORS_URL}${FORM_URL}`, {
 });
 
 const API_KEY = 'AIzaSyCqgsnrf_ptIMULLJ0bN5IWlWFZQ0VkK84';
-const SPREADSHEET_ID = '1U3NW8vBD63WtNY12KoLj3es0rFrAilalL8t9_YPY0oc';
+const SPREADSHEET_ID = '1shxlEBEDrhjVCNaSMz8xV5MMEaRS0laWrJHcrauFNqE';
 const RANGE = 'public';
 
 const GDOC_ULR = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`;
