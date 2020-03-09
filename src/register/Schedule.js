@@ -29,7 +29,34 @@ const Schedule = ({disabled}) => {
         }
     `);
 
-    return null;
+    return (
+        <ScheduleContainer>
+            <Table start={8} end={19} title="Sobota 30. 5.">
+                <DayProvider value="sobota">
+                    <TableRow color="copper">
+                        <Field
+                            name="med-so-am"
+                            start={8.5}
+                            end={13}
+                            component={TimeSlotInput}
+                            label="Měděné výrobky"
+                            price={prices.med}
+                            id="entry.98174209"
+                        />
+                        <Field
+                            name="med-so-pm"
+                            start={14}
+                            end={18.5}
+                            component={TimeSlotInput}
+                            label="Měděné výrobky"
+                            price={prices.med}
+                            id="entry.185825036"
+                        />
+                    </TableRow>
+                </DayProvider>
+            </Table>
+        </ScheduleContainer>
+    );
 };
 
 Schedule.propTypes = {

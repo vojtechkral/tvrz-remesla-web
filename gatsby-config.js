@@ -6,12 +6,12 @@ module.exports = {
         author: 'Tvrz',
         year: 2020,
         email: 'tvrz@tvrz.net',
-        fbEventId: '846604542338267',
+        fbEventId: '568874620710092',
         fields: {
-            name: 'entry.353496457',
-            email: 'entry.1825108357',
-            message: 'entry.241532143',
-            photoAgreement: 'entry.1097476779',
+            name: 'entry.1606860186',
+            email: 'entry.728518451',
+            message: 'entry.912514459',
+            photoAgreement: 'entry.800247354',
         },
         prices: {
             base: 0,
