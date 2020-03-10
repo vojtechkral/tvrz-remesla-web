@@ -21,6 +21,8 @@ export default () => {
             <div className={bootstrap.container}>
                 Akce projektu <a href="http://www.tvrz.net">Tvrz</a> pořádána pod záštitou <a href="http://www.instruktori.cz">Instruktorů Brno</a>.
                 <br />
+                <a href="https://www.instruktori.cz/zasady-zpracovani-osobnich-udaju/">Zásady zpracování osobních údajů.</a>
+                <br />
                 Copyright &copy; {author} {year}
             </div>
         </footer>

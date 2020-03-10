@@ -42,6 +42,8 @@ přestávku si udělat můžeš, v&nbsp;kuchyni se vždycky něco najde. V&nbsp;
 je svačina a večeře, v&nbsp;sobotu i oběd (to samé, pokud budeš u&nbsp;nás
 dopoledne na brigádě).
 
+Chystáme sobotní a nedělní oběd, sobotní večeři a nedělní snídani.
+
 Po přihlášení ti pošleme dotazník, kam můžeš napsat, jestli máš potravinové
 alergie nebo zvláštní požadavky (jsi vegetarián, &hellip;).
 

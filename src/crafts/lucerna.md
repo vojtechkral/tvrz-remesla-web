@@ -1,6 +1,6 @@
 ---
 title: "Lucerna"
-display: true
+display: false
 showcase: 1
 order: 5
 images: ["127-lucerna.jpg", "126-lucerna.jpg", "105-lucerna.jpg", "106-lucerna.jpg"]
