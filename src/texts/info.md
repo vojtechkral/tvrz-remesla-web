@@ -20,14 +20,14 @@ zahrnutý materiál, jídlo a náklady na organizaci akce. Taky z&nbsp;ní
 budeme pokrývat další výdaje jako například dopravu a stravování
 organizátorů.
 
-<!-- Kromě toho máš možnost pomoct nám s&nbsp;pracemi v&nbsp;Příkopu a tím
-si "odpracovat" část ceny akce. Bloky brigád najdeš v&nbsp;přihlášce
-a za každý ti strhneme 300 Kč z&nbsp;ceny. -->
-
 Na akci nic nevyděláváme, veškerý případný zisk půjde do údržby
 a zvelebování středověké vesničky v&nbsp;Příkopu.
 Organizátoři a mistři pracují bez nároku na odměnu.
 
+# Kolik platím
+Za jeden blok řemesel, který trvá čtyři a půl hodiny, zaplatíš mezi 400 a 800 korunami.
+Cena bloku je dána cenou materiálu: Například výroba nože patří k těm dražším,
+protože zahrnuje kupovanou čepel.
 
 # Storno poplatky
 Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 30.&nbsp;4.,
@@ -35,12 +35,14 @@ Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 30.&nbsp;4.,
 akce peníze nevracíme. V&nbsp;případě zrušení akce ze strany
 organizátorů vracíme 100&nbsp;% uhrazené částky.
 
+V případě, že na akci nebudeš moct jet ze zdravotních důvodů a nebo z důvodu karantény,
+jsme ti ochotni vrátit celý účastnický poplatek.
+
 # Jak je to s&nbsp;jídlem?
 Naše černá kuchyně bude vařit po celou dobu akce. Kromě krátké pauzy na oběd
 v&nbsp;řemeslných blocích nejsou přestavky, ale pokud budeš mít hlad,
 přestávku si udělat můžeš, v&nbsp;kuchyni se vždycky něco najde. V&nbsp;ceně
-je svačina a večeře, v&nbsp;sobotu i oběd (to samé, pokud budeš u&nbsp;nás
-dopoledne na brigádě).
+je svačina a večeře, v&nbsp;sobotu i oběd.
 
 Chystáme sobotní a nedělní oběd, sobotní večeři a nedělní snídani.
 
