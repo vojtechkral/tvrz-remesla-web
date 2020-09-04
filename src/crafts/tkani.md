@@ -12,3 +12,5 @@ Můžeš si utkat vlněný popruh použitelný jako ozdoba na oděv, opasek, če
 Tká se na dřevěném hřebenu. Vybereš si barvy (podle dostupných vln) a vzor, navlékneš vlny do hřebenu
 a pak už je třeba jen pečlivě tkát. Při přiměřené zručnosti není problém za dobu řemeslnného bloku
 utkat 1&ndash;2m tkanici, což je délka postačující na opasek nebo našití na oděv.
+
+Tká se z akrylové příze, pokud bys chtěl/a výrobek z jiného materiálu (pravá vlna), musíš se na tom před akcí domluvit.

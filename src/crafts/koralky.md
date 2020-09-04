@@ -17,6 +17,6 @@ repliku skleněného velkomoravského gombíku nebo špendlík s ozdobnou hlavi�
 
 K nahřívání skla budeme používat samodujný sklářský kahan.
 
-Svůj výrobek pak můžeš využít třeba jako základ šperku vyráběného další technikou (měď, kůže,
-textilní techniky), nebo jako funkční díl nějakého dalšího výrobku (zarážka, zapínání a jiné).
-Na tom ale bude nejlepší dohodnout se přímo na místě.
+Tvým výrobkem múže být nahrdelník z korálků, nebo korálky pak můžeš využít třeba jako základ šperku
+vyráběného další technikou (měď, kůže, textilní techniky), nebo jako funkční díl nějakého dalšího výrobku
+(zarážka, zapínání a jiné). Na tom ale bude nejlepší dohodnout se přímo na místě.

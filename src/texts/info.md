@@ -50,7 +50,7 @@ Po přihlášení ti pošleme dotazník, kam můžeš napsat, jestli máš potra
 alergie nebo zvláštní požadavky (jsi vegetarián, &hellip;).
 
 # Co si mám vzít s&nbsp;sebou?
-Oblečení vhodné k&nbsp;práci. Může trochu načichnout kouřem.
+Oblečení vhodné k&nbsp;práci. Může trochu načichnout kouřem. Celé akce probíhá venku, vezměte si oblečení přiměřené teplé.
 
 # Můžu vzít někoho s&nbsp;sebou?
 Areál příkpou má omezenou kapacitu. Pokud vás pojede více, přihlašte se, prosím, zvlášť.
