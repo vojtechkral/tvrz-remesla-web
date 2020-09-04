@@ -31,7 +31,7 @@ protože zahrnuje kupovanou čepel.
 
 # Jak se stavíte k pandemii COVID-19?
 Nechceme pořádat akci, která by mohla ohrozit účastníky a jejich blízké.
-Pokud nebude v srpnu situace dost bezpečná, akci zrušíme a všechny peníze
+Pokud nebude situace dost bezpečná, akci zrušíme a všechny peníze
 dostaneš zpátky. Při pořádání akce se budeme držet nejen nařízení,
 ale i doporučení vlády a hygieny.
 
