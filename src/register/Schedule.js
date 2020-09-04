@@ -31,7 +31,7 @@ const Schedule = ({disabled}) => {
 
     return (
         <ScheduleContainer>
-            <Table start={8} end={19} title="Sobota 30. 5.">
+            <Table start={8} end={19} title="Sobota 17. 10.">
                 <DayProvider value="sobota">
                     <TableRow color="copper">
                         <Field
@@ -139,7 +139,7 @@ const Schedule = ({disabled}) => {
                     </TableRow>
                 </DayProvider>
             </Table>
-            <Table start={8} end={14} title="Neděle 31. 5">
+            <Table start={8} end={14} title="Neděle 18. 10.">
                 <DayProvider value="neděle">
                     <TableRow color="copper">
                         <Field
