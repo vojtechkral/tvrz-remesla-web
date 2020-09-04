@@ -1,5 +1,5 @@
 # Kdy?
-Sobota 30.&nbsp;5. a neděle 31.&nbsp;5. 2020.
+Sobota 17.&nbsp;10. a neděle 18.&nbsp;10. 2020.
 
 V&nbsp;základu počítáme, že se zdržíš na svůj vybraný blok řemesel,
 můžeš ale přijet na libovolnou část akce. Pokud chceš přijet dříve
@@ -30,8 +30,8 @@ Cena bloku je dána cenou materiálu: Například výroba nože patří k těm d
 protože zahrnuje kupovanou čepel.
 
 # Storno poplatky
-Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 30.&nbsp;4.,
-50&nbsp;% do 20.&nbsp;5. a 90&nbsp;% do 29.&nbsp;5. Ode dne započetí
+Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 17.&nbsp;9.,
+50&nbsp;% do 7.&nbsp;10. a 90&nbsp;% do 16.&nbsp;10. Ode dne započetí
 akce peníze nevracíme. V&nbsp;případě zrušení akce ze strany
 organizátorů vracíme 100&nbsp;% uhrazené částky.
 
