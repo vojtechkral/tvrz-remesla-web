@@ -96,7 +96,7 @@ const Schedule = ({disabled}) => {
                     <TableRow color="purple">
                         <Field
                             name="karetky-opasek"
-                            start={8.5}
+                            start={11}
                             end={18.5}
                             component={TimeSlotInput}
                             label="Karetky: Opasek"
@@ -119,23 +119,14 @@ const Schedule = ({disabled}) => {
                         <Field
                             name="nuz-so-am"
                             start={8.5}
-                            end={13}
+                            end={18.5}
                             component={TimeSlotInput}
                             label="Nůž"
                             price={prices.nuz}
                             id="entry.584890331"
                         />
-                        <Field
-                            name="nuz-so-pm"
-                            start={14}
-                            end={18.5}
-                            component={TimeSlotInput}
-                            label="Nůž"
-                            price={prices.nuz}
-                            id="entry.1752832942"
-                        />
                     </TableRow>
-                    <TableRow color="copper">
+                    <TableRow color="goldenrod">
                         <Field
                             name="pochva-so-pm"
                             start={14}
@@ -148,8 +139,8 @@ const Schedule = ({disabled}) => {
                     </TableRow>
                 </DayProvider>
             </Table>
-            <Table start={8} end={13} title="Neděle 31. 5">
-                <DayProvider value="sobota">
+            <Table start={8} end={14} title="Neděle 31. 5">
+                <DayProvider value="neděle">
                     <TableRow color="copper">
                         <Field
                             name="med-ne"
@@ -183,18 +174,7 @@ const Schedule = ({disabled}) => {
                             id="entry.83504422"
                         />
                     </TableRow>
-                    <TableRow color="steel">
-                        <Field
-                            name="nuz-ne"
-                            start={8.5}
-                            end={13}
-                            component={TimeSlotInput}
-                            label="Nůž"
-                            price={prices.nuz}
-                            id="entry.1027324602"
-                        />
-                    </TableRow>
-                    <TableRow color="copper">
+                    <TableRow color="goldenrod">
                         <Field
                             name="pochva-ne"
                             start={8.5}
