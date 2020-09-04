@@ -11,7 +11,6 @@ module.exports = {
             name: 'entry.1606860186',
             email: 'entry.728518451',
             message: 'entry.912514459',
-            photoAgreement: 'entry.800247354',
         },
         prices: {
             base: 0,

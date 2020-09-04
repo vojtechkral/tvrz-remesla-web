@@ -26,7 +26,6 @@ const Form = ({handleSubmit, error}) => {
                         name
                         email
                         message
-                        photoAgreement
                     }
                 }
             }
@@ -67,14 +66,6 @@ const Form = ({handleSubmit, error}) => {
                 placeholder="Chceš nám něco vzkázat?"
                 id={fields.message}
             />
-            <Field
-                name="photo-agreement"
-                label="Uděluji souhlas s focením"
-                component={Checkbox}
-                layout={CheckboxLayout}
-                id={fields.photoAgreement}
-            />
-            <PhotoAgreementText />
             <Center>
                 <SubmitContainer />
             </Center>
