@@ -25,9 +25,19 @@ a zvelebování středověké vesničky v&nbsp;Příkopu.
 Organizátoři a mistři pracují bez nároku na odměnu.
 
 # Kolik platím
-Za jeden blok řemesel, který trvá čtyři a půl hodiny, zaplatíš mezi 400 a 800 korunami.
+Za jeden blok řemesel, který trvá čtyři a půl hodiny, zaplatíš mezi 350 a 800 korunami.
 Cena bloku je dána cenou materiálu: Například výroba nože patří k těm dražším,
 protože zahrnuje kupovanou čepel.
+
+# Jak se stavíte k pandemii COVID-19?
+Nechceme pořádat akci, která by mohla ohrozit účastníky a jejich blízké.
+Pokud nebude v srpnu situace dost bezpečná, akci zrušíme a všechny peníze
+dostaneš zpátky. Při pořádání akce se budeme držet nejen nařízení,
+ale i doporučení vlády a hygieny.
+
+Zároveň jsme ti výjimečně ochotní vrátit celý účastnický poplatek,
+pokud se rozhodneš na akci nejet ze zdravotních důvodů nebo jiných důvodů
+souvisejících s pandemií (karanténa, osobní či pracovní situace, &hellip;).
 
 # Storno poplatky
 Storno poplatky činí 30&nbsp;%, pokud se odhlásíš do 17.&nbsp;9.,
