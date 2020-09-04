@@ -1,7 +1,7 @@
 import React from 'react';
 import {graphql, useStaticQuery} from 'gatsby';
 import {renderMarkdown} from '../utils';
-import {FaqSection, TwoColumn} from '../components';
+import {FaqSection} from '../components';
 
 const renderNodes = (children) => renderMarkdown({type: 'root', children});
 

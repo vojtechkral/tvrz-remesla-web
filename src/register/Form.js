@@ -5,7 +5,7 @@ import {reduxForm} from 'redux-form';
 import {connect} from 'react-redux';
 import {useStaticQuery, graphql} from 'gatsby';
 
-import {TextInput, PhotoAgreementText, Checkbox, CheckboxLayout, StringInput} from './components';
+import {TextInput, StringInput} from './components';
 import {Field} from './containers';
 import {required, validEmail} from './utils';
 import submit from './submit';
