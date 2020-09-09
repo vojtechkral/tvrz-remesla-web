@@ -6,7 +6,7 @@ module.exports = {
         author: 'Tvrz',
         year: 2020,
         email: 'tvrz@tvrz.net',
-        fbEventId: '568874620710092',
+        fbEventId: '1427245124127722',
         fields: {
             name: 'entry.1606860186',
             email: 'entry.728518451',
