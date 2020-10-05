@@ -1,9 +1,3 @@
-Pokud tě tato akce zaujala a chceš se zúčastnit, vyplň, prosím, následující formulář.
-Kromě kontaktních údajů po tobě budeme chtít bloky řemesel, které si chceš vyzkoušet.
-Po přihlášení ti do několika dní pošleme e-mail s&nbsp;dalšími informacemi a podrobnější dotazník,
-kde můžeš vyplnit, kdy se chystáš přijet, kdy odjet, a další organizační informace.
-
-Platbu od tebe budeme chtít do týdne od té doby, co ti pošleme platební informace. Do té doby
-máš rezervované vybrané bloky řemesel, potom tvou přihlášku zrušíme, aby se mohli přihlásit ostatní.
-
-Osobní údaje, které nám poskytneš, použijeme pouze pro účely komunikace spojené s&nbsp;akcí.
+V současné době nepřijímáme nové přihlášky, protože jsme naplnili kapacitu akce danou nařízeními vlády ČR
+(max 20 lidí pro venkovní akci). Pokud vás akce zaujala, sledujte [naše FB stránky](https://www.facebook.com/tvrz.net),
+Řemesla na Tvrzi rosické určitě plánujeme v budoucnu zopakovat.
