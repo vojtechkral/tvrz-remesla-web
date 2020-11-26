@@ -1,3 +1,5 @@
+const sass = require('sass');
+
 module.exports = {
     siteMetadata: {
         title: 'Řemesla na Tvrzi rosické',
@@ -35,7 +37,12 @@ module.exports = {
         },
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
-        'gatsby-plugin-sass',
+        {
+            resolve: 'gatsby-plugin-sass',
+            options: {
+                implementation: sass,
+            }
+        },
         {
             resolve: 'gatsby-plugin-manifest',
             options: {
