@@ -1,9 +1,7 @@
-Pokud tě tato akce zaujala a chceš se zúčastnit, vyplň, prosím, následující formulář.
-Kromě kontaktních údajů po tobě budeme chtít bloky řemesel, které si chceš vyzkoušet.
-Po přihlášení ti do několika dní pošleme e-mail s&nbsp;dalšími informacemi a podrobnější dotazník,
-kde můžeš vyplnit, kdy se chystáš přijet, kdy odjet, a další organizační informace.
+Ve světle současných událostí jsme se rozhodli Řemesla na Tvrzi rosické zrušit. Ačkoliv bychom dokázali vyhovět
+aktuálně platným nařízením, v době rychlého růstu počtu nakažených nám pořádat akci nepřijde vhodné ani bezpečné.
+Navíc se nechceme dostat do situace, kdybychom museli akci rušit den předem kvůli zpřísnění opatření nebo výpadku
+některého z řemeslných mistrů z důvodů nemoci nebo karentény.
 
-Platbu od tebe budeme chtít do týdne od té doby, co ti pošleme platební informace. Do té doby
-máš rezervované vybrané bloky řemesel, potom tvou přihlášku zrušíme, aby se mohli přihlásit ostatní.
-
-Osobní údaje, které nám poskytneš, použijeme pouze pro účely komunikace spojené s&nbsp;akcí.
+Pokud vás Řemesla na Tvrzi rosické zaujala, sledujte [naše FB stránky](https://www.facebook.com/tvrz.net),
+plánujeme je uspořádat v prvním vhodném termínu.
