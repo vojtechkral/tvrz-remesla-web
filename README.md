@@ -9,7 +9,6 @@ Pro další ročník je třeba upravit:
 
 Co by se dalo vylepšit
 ----------------------
-* Práce s datumy - například u storna (problém s markdownem).
+* Práce s datumy -- například u storna (problém s markdownem).
 * Zavést eslint.
-* Obnovit API key a přesunout ho do .env souboru.
 * Pohrát si s bootstrapem -- zatím to nahrává celý, a to ještě do HTML souboru, má to asi 300kB.
