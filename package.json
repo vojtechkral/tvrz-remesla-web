@@ -43,6 +43,7 @@
     "redux-freeze": "0.1.7",
     "redux-saga": "1.1.3",
     "rehype-react": "4.0.1",
+    "remark-czech-preprocessor": "tomvej/remark-czech-preprocessor",
     "reselect": "4.0.0",
     "whatwg-fetch": "3.0.0"
   },
