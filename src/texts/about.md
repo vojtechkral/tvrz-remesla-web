@@ -1,19 +1,14 @@
 ## O akci
-Řemesla na Tvrzi rosické je workshop tradičních řemesel, který tě v sobotu 17. a neděli 18. října přenese do 14.&nbsp;století na panství rosické.
+Řemesla na Tvrzi rosické je workshop tradičních řemesel v Rosicích u Brna. Chceš si vyrobit vlastní nůž a pochvu?
+Naučit se základy práce s mědí nebo se sklem? Vyrobit si koženou tašvici, protože už tě nebaví, že většina historického odění nemá kapsy?
+Nebo lucernu z pergamenu, ať si nemusíš na akci svítit čelovkou? A co třeba opasky, ať už tkané na hřebenu nebo na karetkách?
+Pod vedením našich mistrů si vyzkoušíš základy vybraného řemesla na konkrétních výrobcích, které pak můžeš nosit (nejen) ke svému historickému kostýmu.
 
-Staneš se řemeslným učedníkem a pod vedením zkušeného mistra si vyrobíš doplněk ke svému historickému šatu, předmět denní potřeby,
-či si jen vyzkoušíš tradiční postupy. Mezitím co budeš v potu tváře vyrábět svůj nůž, tepat měděný prsten pro svou lásku
-či motat skleněné vinuté korálky pro radost, z otevřené kuchyně se již bude linout vůně dušeniny.
+Worshop se koná v prostoru středověké vesničky v areálu zámku v Rosicích u Brna. Celá akce probíhá v kulisách první poloviny 14. století,
+nesnažíme se však o absolutní historickou věrnost Někdy pracujeme s materiály a technikami staršími, jindy si zase trošku vypomůžeme něčím moderním.
+Občas vycházíme z nálezů, jindy výrobek přizpůsobíme spíš našim potřebám nebo dostupným materiálům a technologiím. O tom, jak moc historicky přesný
+tvůj výrobek bude, do určité míry můžeš rozhodnout i ty, v každém případě však dostaneš možnost vyzkoušet si základy daného řemesla a odnést
+si vlastnoruční výrobek. Bližší informace najdeš u jednotlivých řemesel.
 
-Díky kulisám středověké vesničky a interakcím kostýmovaným lidí zažiješ jedinečnou
-atmosféru a navíc si odneseš vlastnoruční dílo.
-
-### O vesničce
-Akce se bude konat v&nbsp;areálu zámku Rosic u&nbsp;Brna, takzvaném Příkopu,
-který normálně slouží jako zázemí zážitkové akce <a href="http://www.tvrz.net">Tvrz</a>.
-Celá akce bude probíhat v&nbsp;historických kulisách první poloviny čtrnáctého století,
-ve kterém je Tvrz už tradičně zakotvena. Tomu odpovídá i třeba příprava jídla,
-která probíhá na ohni s&nbsp;použitím odpovídajících surovin. Mimo to budou organizátoři
-v&nbsp;historických kostýmech. Ty si však vyber takové oblečení, jaké je ti pohodlné.
-Jenom pozor na praktičnost &ndash; počítej s&nbsp;tím, že se pohybuješ v&nbsp;prostředí
-ohně, dřeva, uhlí, hlíny, slámy, &hellip;
+Workshop je určený pro kohokoli, komu nevadí pracovat rukama (protože bez toho to opravdu nejde). Máš-li nějaký specifický požadavek
+(historická věrnost či neobvyklý tvar pro tvůj kostým na LARP), neváhej nám napsat a zkusíme se domluvit.

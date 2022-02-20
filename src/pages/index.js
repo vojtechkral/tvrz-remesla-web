@@ -7,7 +7,6 @@ import Register from '../register';
 
 import './style.scss';
 import {renderMarkdown} from '../utils';
-import {ErrorAlert} from '../register/components';
 
 export default () => {
     const {background, site, about, register} = useStaticQuery(graphql`
@@ -48,9 +47,6 @@ export default () => {
             </Navbar>
             <Masthead />
             <Section name="about">
-                <ErrorAlert>
-                    {renderMarkdown(register.childMarkdownRemark.htmlAst)}
-                </ErrorAlert>
                 {renderMarkdown(about.childMarkdownRemark.htmlAst)}
             </Section>
             <Section
@@ -68,6 +64,7 @@ export default () => {
             <Section name="register">
                 <h2>Přihláška</h2>
                 {renderMarkdown(register.childMarkdownRemark.htmlAst)}
+                <Register />
             </Section>
             <Section name="contact">
                 <Contact />
