@@ -64,7 +64,7 @@ export default () => {
             <Section name="register">
                 <h2>Přihláška</h2>
                 {renderMarkdown(register.childMarkdownRemark.htmlAst)}
-                {/*<Register />*/}
+                <Register />
             </Section>
             <Section name="contact">
                 <Contact />
