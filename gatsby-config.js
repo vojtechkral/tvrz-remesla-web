@@ -1,6 +1,7 @@
 const sass = require('sass');
 
 module.exports = {
+    pathPrefix: '/tvrz-remesla-web',
     siteMetadata: {
         title: 'Řemesla na Tvrzi rosické',
         edition: 'III',
