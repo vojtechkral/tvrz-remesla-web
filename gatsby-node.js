@@ -2,7 +2,7 @@ const GitRevisionPlugin = require('git-revision-webpack-plugin');
 const SentryPlugin = require('@sentry/webpack-plugin');
 const path = require('path');
 
-exports.onCreateWebpackConfig = ({stage, plugins, actions}) => {
+/*exports.onCreateWebpackConfig = ({stage, plugins, actions}) => {
     const gitRevisionPlugin = new GitRevisionPlugin();
     const additionalPlugins = [
         gitRevisionPlugin,
@@ -21,3 +21,4 @@ exports.onCreateWebpackConfig = ({stage, plugins, actions}) => {
         plugins: additionalPlugins,
     });
 }
+*/
