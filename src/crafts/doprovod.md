@@ -1,6 +1,6 @@
 ---
 title: "Doprovodný program"
-display: true
+display: false
 showcase: 2
 order: 7
 images: ["123-dp.jpg", "134-dp.jpg", "142-dp.jpg", "124-dp.jpg", "131-dp.jpg", "143-dp.jpg", "145-dp.jpg"]
