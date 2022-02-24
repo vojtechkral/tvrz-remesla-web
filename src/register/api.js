@@ -1,11 +1,11 @@
 import queryString from 'query-string';
 import * as R from 'ramda';
 
-const CORS_URL = 'https://cors-anywhere.herokuapp.com/';
-const FORM_URL = 'https://docs.google.com/forms/u/0/d/e/1FAIpQLSdy6NncAF5qWRRMldTEICkIW45ZD_HCEna9s3bzHZ1HHg6xpA/formResponse';
+const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSejh7dCAeT7_yZrB_AQ1UrbFBsHk26TD_rkEMVnOIVNUYtYXA/formResponse';
 
-export const submit = (values) => fetch(`${CORS_URL}${FORM_URL}`, {
+export const submit = (values) => fetch(FORM_URL, {
     method: 'POST',
+    mode: 'no-cors',
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
     },
