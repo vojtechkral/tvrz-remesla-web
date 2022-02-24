@@ -13,7 +13,7 @@ export const submit = (values) => fetch(`${CORS_URL}${FORM_URL}`, {
 });
 
 const API_KEY = 'AIzaSyCqgsnrf_ptIMULLJ0bN5IWlWFZQ0VkK84';
-const SPREADSHEET_ID = '1shxlEBEDrhjVCNaSMz8xV5MMEaRS0laWrJHcrauFNqE';
+const SPREADSHEET_ID = '1ivgvR6NZz27T9IUXGtHbpZqVhHZAtTWi03HtiVGfrHw';
 const RANGE = 'public';
 
 const GDOC_ULR = `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}?key=${API_KEY}`;

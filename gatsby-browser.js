@@ -11,6 +11,7 @@ config.autoAddCss = false;
 export const onClientEntry = () => {
     // IntersectionObserver polyfill for IE 11
     if (!('IntersectionObserver' in window)) {
+        // eslint-disable-next-line no-unused-expressions
         import('intersection-observer');
     }
 
