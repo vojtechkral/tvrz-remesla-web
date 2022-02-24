@@ -10,12 +10,12 @@ exports.onCreateWebpackConfig = ({stage, plugins, actions}) => {
             __SENTRY_RELEASE__: JSON.stringify(gitRevisionPlugin.commithash()),
         }),
     ];
-    /*if (stage === 'build-javascript') {
+    if (stage === 'build-javascript') {
         additionalPlugins.push(new SentryPlugin({
             release: gitRevisionPlugin.commithash(),
             include: path.resolve(__dirname, 'public'),
         }));
-    }*/
+    }
 
     actions.setWebpackConfig({
         plugins: additionalPlugins,
