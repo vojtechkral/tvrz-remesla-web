@@ -31,7 +31,7 @@ const formatFreeSlots = (slots) => {
     }
 };
 
-const mergeProps = ({freeSlots, submitted}, {onMount}, {input, start, end, label, price}) => {
+const mergeProps = ({freeSlots, submitted}, {onMount}, {input, start, end, label, price, color}) => {
     const active = input.value !== EMPTY;
     const disabled = freeSlots === 0;
     return ({
@@ -41,6 +41,7 @@ const mergeProps = ({freeSlots, submitted}, {onMount}, {input, start, end, label
         start,
         end,
         onMount,
+        color,
         children: `${label}: ${price} Kč`,
         tooltip: active ? 'Rezervováno' : formatFreeSlots(freeSlots),
     });

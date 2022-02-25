@@ -19,9 +19,10 @@ const colorTable = {
     purple: styles.purple,
 };
 
-const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onMount}) => {
+const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onMount, color}) => {
     const interval = useContext(IntervalContext);
-    const color = useContext(RowColorContext);
+    const contextColor = useContext(RowColorContext);
+    const finalColor = color || contextColor;
     const [showTooltip, onMouseEnter, onMouseLeave] = useTooltip(250);
     useEffect(onMount, []);
 
@@ -32,7 +33,7 @@ const TimeSlot = ({start, end, children, disabled, active, onClick, tooltip, onM
         <Manager>
             <div
                 style={{left, width}}
-                className={classnames(styles.wrapper, colorTable[color])}
+                className={classnames(styles.wrapper, colorTable[finalColor])}
                 onMouseEnter={onMouseEnter}
                 onMouseLeave={onMouseLeave}
             >
@@ -66,12 +67,14 @@ TimeSlot.propTypes = {
     onClick: PropTypes.func.isRequired,
     tooltip: PropTypes.string,
     onMount: PropTypes.func.isRequired,
+    color: PropTypes.oneOf(Object.keys(colorTable)),
 };
 
 TimeSlot.defaultProps = {
     disabled: false,
     active: false,
     tooltip: null,
+    color: null,
 };
 
 export default TimeSlot;
