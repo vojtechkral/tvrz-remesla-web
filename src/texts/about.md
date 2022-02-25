@@ -1,4 +1,3 @@
-## O akci
 Řemesla na Tvrzi rosické je workshop tradičních řemesel v Rosicích u Brna. Chceš si vyrobit vlastní nůž a pochvu?
 Naučit se základy práce s mědí nebo se sklem? Vyrobit si koženou tašvici, protože už tě nebaví, že většina historického odění nemá kapsy?
 Nebo lucernu z pergamenu, ať si nemusíš na akci svítit čelovkou? A co třeba opasky, ať už tkané na hřebenu nebo na karetkách?
