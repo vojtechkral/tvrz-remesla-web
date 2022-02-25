@@ -15,7 +15,10 @@ const SubmitButton = ({disabled, ...rest}) => (
             bootstrap.btnPrimary,
             button.main,
             button.primary,
-            {[bootstrap.disabled]: disabled}
+            {
+                [bootstrap.disabled]: disabled,
+                [button.disabled]: disabled,
+            }
         )}
     />
 );

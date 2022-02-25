@@ -27,3 +27,7 @@
 .outline {
     border: 1px solid $primary;
 }
+
+.disabled {
+    cursor: not-allowed;
+}
