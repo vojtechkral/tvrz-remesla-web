@@ -23,7 +23,7 @@ module.exports = {
             lucerna: 550,
             karetkyOpasek: 600,
             karetkyDrobne: 450,
-            nuz: 700,
+            nuz: 750,
             pochva: 450,
             tasvice: 750,
         },
