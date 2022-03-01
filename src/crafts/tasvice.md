@@ -14,4 +14,4 @@ V celodenním bloku se naučíš základní práci s kůží i něco o barvení,
 střihů a pracujeme s třísločiněnnou kůží, na barvení používáme moderní barvy. Máš-li však nějaký konkrétní střih,
 o který bys měl zájem, napiš a domluvíme se. Sponu na tašvici si můžeš vybrat u nás, vyrobit například na kurzu mědi,
 nebo přivést vlastní, pokud budeš chtít nějakou speciální (jedná se o malou sponu s trnem, jako je například na opascích,
-na pásek široký 1–2 cm).
+na pásek široký 1,5–2,5 cm).
