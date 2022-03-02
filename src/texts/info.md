@@ -20,6 +20,7 @@ Například výroba nože patří k těm dražším, protože zahrnuje kupovanou
 
 Kromě základní ceny uvedené v přihlašovací tabulce ti můžou mistři na akci za příplatek nabídnout dražší materiál
 (například ovčí vlnu místo akrylu) nebo možnost odvézt si domů některé nástroje. Výrobek si však vždy zvládneš vyrobit i bez příplatků.
+Bližší informace najdeš přečíst v popisu jednotivých řemesel.
 
 # Jak se stavíte k pandemii COVID-19?
 Nechceme pořádat akci, která by mohla ohrozit účastníky a jejich blízké. Pokud nebude situace dost bezpečná,
