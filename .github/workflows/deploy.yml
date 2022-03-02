@@ -20,11 +20,10 @@ jobs:
       - name: Install Dependencies
         run: yarn install
       - name: Build
-        run: export SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN }} && yarn build
+        run: export SENTRY_AUTH_TOKEN=${{ secrets.SENTRY_AUTH_TOKEN }} && yarn build --prefix-paths
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          cname: remesla.tvrz.net
