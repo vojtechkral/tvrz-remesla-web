@@ -25,6 +25,7 @@ const NavItem = ({target, children}) => {
                 href={`#${target}`}
                 to={target}
                 activeClass={style.active}
+                onSetActive={() => window.gtag('event', 'page_view', {page_path: `/${target}`})}
             >
                 {children}
             </ScrollLink>
