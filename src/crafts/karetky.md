@@ -3,7 +3,7 @@ title: "Karetková tkanice"
 display: true
 showcase: 2
 order: 4
-images: ["karetky-1.jpg", "karetky-2.jpg"]
+images: ["karetky-3.jpg", "karetky-1.jpg", "karetky-2.jpg"]
 ---
 *Tkaní na karetkách je sice těžší než na hřebenu, ale ty vzory!*
 

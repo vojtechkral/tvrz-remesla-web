@@ -3,7 +3,7 @@ title: "Hřebenová tkanice"
 display: true
 showcase: 2
 order: 3
-images: ["112-stuha.jpg", "113-stuha.jpg", "150-stuha.jpg", "116-stuha.jpg", "117-stuha.jpg"]
+images: ["hrebenovka-1.jpg", "112-stuha.jpg", "113-stuha.jpg", "150-stuha.jpg", "116-stuha.jpg", "117-stuha.jpg"]
 ---
 *Utkat z příze pruhy s ozdobnými vzory zvládne s hřebenem i začátečník!*
 

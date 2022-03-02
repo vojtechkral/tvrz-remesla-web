@@ -1,9 +1,9 @@
 ---
 title: "Kožená tašvice"
 display: true
-showcase: 0
+showcase: 2
 order: 7
-images: []
+images: ["tasvice-1.jpg", "tasvice-2.jpg"]
 ---
 *Stylový doplněk, který vyřeší nikdy nekončící problém – kam schovat drobnosti, když můj kostým nemá kapsy?*
 
