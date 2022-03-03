@@ -69,7 +69,7 @@ const Schedule = ({disabled}) => {
                     <TableRow color="purple">
                         <Field
                             name="karetky-so-am"
-                            start={11}
+                            start={8.5}
                             end={18.5}
                             component={TimeSlotInput}
                             label="Karetková tkanice &ndash; opasek"
