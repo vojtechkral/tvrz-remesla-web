@@ -1,5 +1,5 @@
 # Kdy?
-Sobota 23. 4. a neděle 24. 4. 2020.
+Sobota 23. 4. a neděle 24. 4. 2022.
 
 Akce začíná v sobotu v 8:45 a končí v neděli v 15:00.
 
