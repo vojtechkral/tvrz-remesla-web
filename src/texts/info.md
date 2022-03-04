@@ -40,9 +40,8 @@ spojených s pandemií covid 19, vracíme též 100 % uhrazené částky.
 
 # Jak je to s jídlem?
 Naše černá kuchyně bude vařit po celou dobu akce. Kromě krátké pauzy na oběd v řemeslných blocích nejsou přestavky,
-ale pokud budeš mít hlad, přestávku si udělat můžeš, v kuchyni se vždycky něco najde. V ceně je svačina a večeře, v sobotu i oběd.
-
-Chystáme sobotní a nedělní oběd, sobotní večeři a nedělní snídani.
+ale pokud budeš mít hlad, přestávku si udělat můžeš, v kuchyni se vždycky něco najde.
+Z velkých jídel ti můžeme nabídnout sobotní a nedělní oběd, sobotní večeři a nedělní snídani.
 
 Po přihlášení ti pošleme dotazník, kam můžeš napsat, jestli máš potravinové alergie nebo zvláštní požadavky (jsi vegetarián, …).
 
