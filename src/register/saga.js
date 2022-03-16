@@ -6,16 +6,24 @@ import {getIds} from './selectors';
 import {submit, getFreeSlots} from './api';
 
 const submitForm = function* submitForm({values}) {
-    const ids = yield select(getIds);
-    const request = mapKeys(R.flip(R.prop)(ids), values);
-    yield spawn(window.gtag, 'submit');
-    yield call(submit, request);
-    yield put(submitComplete());
+    try {
+        const ids = yield select(getIds);
+        const request = mapKeys(R.flip(R.prop)(ids), values);
+        yield spawn(window.gtag, 'submit');
+        yield call(submit, request);
+        yield put(submitComplete());
+    } catch (e) {
+        throw new Error(`Unable to submit form: ${e}`);
+    }
 };
 
 const loadFreeSlots = function* loadFreeSlots() {
-    const freeSlots = yield call(getFreeSlots);
-    yield put(updateFreeSlots(freeSlots));
+    try {
+        const freeSlots = yield call(getFreeSlots);
+        yield put(updateFreeSlots(freeSlots));
+    } catch (e) {
+        throw new Error(`Unable to load free slots: ${e}`);
+    }
 };
 
 export default function* () {
