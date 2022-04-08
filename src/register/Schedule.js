@@ -188,6 +188,17 @@ const Schedule = ({disabled}) => {
                             id="entry.570275917"
                         />
                     </TableRow>
+                    <TableRow color="goldenrod">
+                        <Field
+                            name="lucerna-ne"
+                            start={8.5}
+                            end={13}
+                            component={TimeSlotInput}
+                            label="Lucerna"
+                            price={prices.lucerna}
+                            id="entry.340303158"
+                        />
+                    </TableRow>
                 </DayProvider>
             </Table>
         </ScheduleContainer>
