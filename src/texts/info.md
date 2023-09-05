@@ -1,5 +1,5 @@
 # Kdy?
-Sobota 23. 4. a neděle 24. 4. 2022.
+Sobota 14. 10. a neděle 15. 10. 2023.
 
 Akce začíná v sobotu v 8:45 a končí v neděli v 15:00.
 
@@ -22,13 +22,13 @@ Kromě základní ceny uvedené v přihlašovací tabulce ti můžou mistři na 
 (například ovčí vlnu místo akrylu) nebo možnost odvézt si domů některé nástroje. Výrobek si však vždy zvládneš vyrobit i bez příplatků.
 Bližší informace najdeš přečíst v popisu jednotivých řemesel.
 
-# Jak se stavíte k pandemii COVID-19?
+<!-- # Jak se stavíte k pandemii COVID-19?
 Nechceme pořádat akci, která by mohla ohrozit účastníky a jejich blízké. Pokud nebude situace dost bezpečná,
 akci zrušíme a všechny peníze dostaneš zpátky. Při pořádání akce se budeme držet nejen nařízení, ale i doporučení
 vlády a hygieny. O aktuální situaci tě budeme informovat a o zrušení akce rozhodneme nejpozději 11. 4.
 
 Podle současných nařízení není pro účast na akci nutný negativní test, certifikát o očkování nebo prodělané nemoci.
-Pokud však budeš mít příznaky nemoci, poprosíme tě abys zůstal/a doma. V takovém případě jsme ti výjimečně ochotni vrátit účastnický poplatek (viz níže).
+Pokud však budeš mít příznaky nemoci, poprosíme tě abys zůstal/a doma. V takovém případě jsme ti výjimečně ochotni vrátit účastnický poplatek (viz níže). -->
 
 # Storno poplatky
 Storno poplatky činí 30 %, pokud se odhlásíš do 21. 3., 50 % do 12. 4. a 90 % do 22. 4. Ode dne započetí akce peníze nevracíme.

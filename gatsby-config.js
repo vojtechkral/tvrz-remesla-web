@@ -4,10 +4,10 @@ module.exports = {
     pathPrefix: '/tvrz-remesla-web',
     siteMetadata: {
         title: 'Řemesla na Tvrzi rosické',
-        edition: 'III',
+        edition: 'IV',
         description: 'Přijeď se do Rosic naučit základy řemesla a vyrobit si svůj vlastní výrobek!',
         author: 'Tvrz',
-        year: 2020,
+        year: 2023,
         email: 'tvrz@tvrz.net',
         fbEventId: '1427245124127722',
         fields: {
