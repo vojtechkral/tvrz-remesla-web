@@ -9,7 +9,7 @@ module.exports = {
         author: 'Tvrz',
         year: 2023,
         email: 'tvrz@tvrz.net',
-        fbEventId: '1427245124127722',
+        fbEventId: '1427245124127722',  // FIXME: FB udalost
         fields: {
             name: 'entry.79134988',
             email: 'entry.386040003',
@@ -20,12 +20,10 @@ module.exports = {
             med: 550,
             korale: 650,
             hrebenovka: 450,
-            lucerna: 550,
             karetkyOpasek: 600,
             karetkyDrobne: 450,
             nuz: 750,
-            pochva: 450,
-            tasvice: 750,
+            lzice: 42,
         },
     },
     plugins: [

@@ -17,13 +17,11 @@ const Schedule = ({disabled}) => {
                     prices {
                         med
                         hrebenovka
-                        lucerna
                         nuz
-                        pochva
                         korale
                         karetkyOpasek
                         karetkyDrobne
-                        tasvice
+                        lzice
                     }
                 }
             }
@@ -57,13 +55,13 @@ const Schedule = ({disabled}) => {
                     </TableRow>
                     <TableRow color="copper">
                         <Field
-                            name="tasvice-so"
+                            name="lzice-so-am"
                             start={8.5}
-                            end={18.5}
+                            end={13.0}
                             component={TimeSlotInput}
-                            label="Kožená tašvice"
-                            price={prices.tasvice}
-                            id="entry.856708713"
+                            label="Dřevěná lžíce"
+                            price={prices.lzice}
+                            id="entry.379411149"
                         />
                     </TableRow>
                     <TableRow color="purple">
@@ -118,28 +116,6 @@ const Schedule = ({disabled}) => {
                             id="entry.1953526992"
                         />
                     </TableRow>
-                    <TableRow color="copper">
-                        <Field
-                            name="pochva-so-pm"
-                            start={14}
-                            end={18.5}
-                            component={TimeSlotInput}
-                            label="Pochva"
-                            price={prices.pochva}
-                            id="entry.1921006939"
-                        />
-                    </TableRow>
-                    <TableRow color="goldenrod">
-                        <Field
-                            name="lucerna-so-pm"
-                            start={14}
-                            end={18.5}
-                            component={TimeSlotInput}
-                            label="Lucerna"
-                            price={prices.lucerna}
-                            id="entry.1156607201"
-                        />
-                    </TableRow>
                 </DayProvider>
             </Table>
             <Table start={8} end={14} title="Neděle 24. 4.">
@@ -179,24 +155,13 @@ const Schedule = ({disabled}) => {
                     </TableRow>
                     <TableRow color="copper">
                         <Field
-                            name="pochva-ne"
+                            name="lzice-ne"
                             start={8.5}
                             end={13}
                             component={TimeSlotInput}
-                            label="Pochva"
-                            price={prices.pochva}
-                            id="entry.570275917"
-                        />
-                    </TableRow>
-                    <TableRow color="goldenrod">
-                        <Field
-                            name="lucerna-ne"
-                            start={8.5}
-                            end={13}
-                            component={TimeSlotInput}
-                            label="Lucerna"
-                            price={prices.lucerna}
-                            id="entry.340303158"
+                            label="Dřevěná lžíce"
+                            price={prices.lzice}
+                            id="entry.508818566"
                         />
                     </TableRow>
                 </DayProvider>
