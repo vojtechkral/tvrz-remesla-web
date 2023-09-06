@@ -1,5 +1,5 @@
 ---
-title: "Nůž a pochva"
+title: "Nůž"
 display: true
 showcase: 3
 order: 6
@@ -13,11 +13,6 @@ za příplatek pak i delší. Pokud budeš mít na čepel nějaké specifické p
 Rukojeť budeš mít dřevěnou (dle možností bukovou, jasanovou nebo březovou), montovanou technikou na trn lepením.
 Po obrobení do požadovaného tvaru ji napustíš impregnací a vyleštíš.
 
-Pochvu si vyrobíš koženou, volitelně s dřevěnou vložkou a se šitím buď vzadu (středověký nebo také finský styl) nebo na boku.
-Výroba pochvy je v nabídce uvedena jako samostatný blok, pokud máš zájem nezapomeň si jej přihlásit.
-Pro výrobu pochvy je potřeba mít hotový nůž buď ten, co si vyrobíš, nebo si můžes i donést svůj.
-
 Prakticky všechny práce se provádí ručními nástroji (nůž, pilka, pilník, smirkový papír, …), občas si pomůžeme vrtačkou nebo bruskou.
 
 V současnosti nenabízíme nože, které by měly předlohy v historických pramenech, ale pokud nejezdíš living history, nemusíš se bát, že by ti nůž kazil kostým. Naopak!
-
