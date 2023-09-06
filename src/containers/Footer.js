@@ -19,7 +19,7 @@ export default () => {
     return (
         <footer className={classnames(bootstrap.small, styles.main)}>
             <div className={bootstrap.container}>
-                Akce projektu <a href="http://www.tvrz.net">Tvrz</a> pořádána pod záštitou <a href="http://www.instruktori.cz">Instruktorů Brno</a>.
+                Akce projektu <a href="http://www.tvrz.net">Tvrz</a> pořádána spolkem Hechtendorf.
                 <br />
                 <a href="https://www.instruktori.cz/zasady-zpracovani-osobnich-udaju/">Zásady zpracování osobních údajů.</a>
                 <br />
