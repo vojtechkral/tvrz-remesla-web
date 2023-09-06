@@ -31,7 +31,7 @@ Podle současných nařízení není pro účast na akci nutný negativní test,
 Pokud však budeš mít příznaky nemoci, poprosíme tě abys zůstal/a doma. V takovém případě jsme ti výjimečně ochotni vrátit účastnický poplatek (viz níže). -->
 
 # Storno poplatky
-Storno poplatky činí 30 %, pokud se odhlásíš do 21. 3., 50 % do 12. 4. a 90 % do 22. 4. Ode dne započetí akce peníze nevracíme.
+Storno poplatky činí 30 %, pokud se odhlásíš do 13. 9., 50 % do 3. 10. a 90 % do 13. 10. Ode dne započetí akce peníze nevracíme.
 V případě zrušení akce ze strany organizátorů vracíme 100 % uhrazené částky. V případě, že zrušíme řemeslný blok z důvodu
 absence mistra, vrátíme ti peníze za konkrétní zrušený blok.
 
