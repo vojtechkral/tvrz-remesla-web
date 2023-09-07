@@ -7,7 +7,7 @@ module.exports = {
         description: 'Přijeď se do Rosic naučit základy řemesla a vyrobit si svůj vlastní výrobek!',
         author: 'Tvrz',
         year: 2023,
-        email: 'tvrz@tvrz.net',
+        email: 'remesla@hechtendorf.cz',
         fbEventId: '1427245124127722',  // FIXME: FB udalost
         fields: {
             name: 'entry.79134988',
